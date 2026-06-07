@@ -23,13 +23,14 @@
 </head>
 <body>
 
-<header class="site-header">
+<!-- ===================== HEADER (pleine largeur) ===================== -->
+<header class="site-header head--wide">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Objectifs Carrières, accueil">
       <span class="brand__mark" aria-hidden="true"><img src="/logo-mark.png" alt="" width="51" height="50" /></span>
       <span>
         <span class="brand__name">Objectifs <b>Carrières</b></span>
-        <span class="brand__sub">Bilan · VAE · sanitaire &amp; social</span>
+        <span class="brand__sub">Bilan · VAE · CléA · sanitaire &amp; social</span>
       </span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
@@ -40,7 +41,8 @@
           <a href="/bilan-de-competences">Bilan de compétences</a>
           <a href="/vae">VAE — Validation des acquis</a>
           <a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a>
-          <a href="/accompagnement" class="sub__all">Notre méthode d'accompagnement →</a>
+          <a href="/clea">Certification CléA</a>
+          <a href="/comparatif" class="sub__all">Comparer les 3 dispositifs →</a>
         </div>
       </div>
       <a href="/secteur-sanitaire-social">Sanitaire &amp; social</a>
@@ -60,37 +62,32 @@
   </div>
 </header>
 
-<!-- ===================== HERO ===================== -->
-<section class="hero hero--page" data-screen-label="Approche">
-  <div class="hero__sky"></div>
-  <div class="hero__scene" id="scene" data-scene="approche"></div>
-  <div class="hero__scrim"></div>
-  <div class="wrap">
-    <div class="hero__inner">
-      <span class="eyebrow reveal in">L'organisme · notre approche</span>
-      <h1 class="reveal in" data-delay="1">L'humain d'abord.<br /><em>La méthode, toujours.</em></h1>
-      <p class="hero__lead reveal in" data-delay="2">Objectifs Carrières n'accompagne pas des dossiers : elle accompagne des personnes. Notre différence tient en deux mots — expertise pédagogique et proximité — au service d'un seul secteur : le sanitaire et social.</p>
-      <div class="hero__cta reveal in" data-delay="3">
-        <a href="/contact" class="btn btn--lg">Être rappelé·e <span class="arr">→</span></a>
-        <a href="#equipe" class="btn btn--ghost btn--lg">Rencontrer l'équipe</a>
-      </div>
+<!-- ===================== HERO (band crème) ===================== -->
+<section class="band" data-screen-label="Approche">
+  <div class="sviz" data-viz="transmission" style="opacity:.5;"></div>
+  <div class="bleed">
+    <span class="kicker reveal in">L'organisme · notre approche</span>
+    <h1 class="mega reveal in" data-delay="1" style="margin-top:14px;">L'humain d'abord. <em>La méthode, toujours.</em></h1>
+    <p class="sub reveal in" data-delay="2" style="margin-top:22px;">Objectifs Carrières n'accompagne pas des dossiers : elle accompagne des personnes. Notre différence tient en deux mots — expertise pédagogique et proximité — au service d'un seul secteur : le sanitaire et social.</p>
+    <div class="hero__cta reveal in" data-delay="3" style="margin-top:32px;">
+      <a href="/contact" class="btn btn--lg">Être rappelé·e <span class="arr">→</span></a>
+      <a href="#equipe" class="btn btn--ghost btn--lg">Rencontrer l'équipe</a>
     </div>
   </div>
 </section>
 
 <!-- ===================== CONVICTION ===================== -->
-<section class="section" data-screen-label="Conviction">
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:center; gap:clamp(40px,6vw,90px);">
+<section class="band band--cream2" data-screen-label="Conviction">
+  <div class="bleed">
+    <div class="duo" style="align-items:center;">
       <div class="reveal">
-        <span class="eyebrow">Pourquoi nous</span>
-        <p class="h-section" style="margin-top:18px;">La réussite d'un accompagnement se joue dans les détails.</p>
-        <div class="sviz sviz--wide" data-viz="transmission"></div>
+        <span class="kicker">Pourquoi nous</span>
+        <h2 class="mega" style="margin-top:12px;">La réussite se joue <em>dans les détails.</em></h2>
+        <p class="sub" style="margin-top:18px;">Un bon accompagnement VAE ou un bon bilan, ce n'est pas un formulaire à remplir. C'est une relation de confiance, une connaissance fine des référentiels, et une pédagogie qui révèle ce que vous savez déjà faire.</p>
+        <p style="margin-top:14px; color:var(--ink-2); max-width:60ch;">Nous avons fait un choix : ne travailler que le sanitaire, le social et le médico-social. Cette spécialisation nous permet de maîtriser chaque diplôme d'État, chaque attendu de jury, chaque subtilité du terrain — et de vous transmettre cette maîtrise. C'est l'inverse d'un organisme généraliste : ici, on parle votre langue.</p>
       </div>
       <div class="reveal" data-delay="1">
-        <p class="lead">Un bon accompagnement VAE ou un bon bilan, ce n'est pas un formulaire à remplir. C'est une relation de confiance, une connaissance fine des référentiels, et une pédagogie qui révèle ce que vous savez déjà faire.</p>
-        <p style="color:var(--ink-2);">Nous avons fait un choix : ne travailler que le sanitaire, le social et le médico-social. Cette spécialisation nous permet de maîtriser chaque diplôme d'État, chaque attendu de jury, chaque subtilité du terrain — et de vous transmettre cette maîtrise. C'est l'inverse d'un organisme généraliste : ici, on parle votre langue.</p>
-        <ul class="ticks" style="margin-top:22px;">
+        <ul class="ticks">
           <li><strong>Un référent unique</strong> du premier appel jusqu'au jury.</li>
           <li><strong>Des ressources pédagogiques</strong> pensées pour vos métiers.</li>
           <li><strong>Une préparation au jury</strong> qui ne laisse rien au hasard.</li>
@@ -100,93 +97,104 @@
   </div>
 </section>
 
-<!-- ===================== MÉTHODE ===================== -->
-<section class="section section--paper2" data-screen-label="Méthode">
-  <div class="sviz" data-viz="process"></div>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">La méthode Objectifs Carrières</span>
-      <h2 class="h-section">Un accompagnement en quatre temps</h2>
-      <p class="lead">Le même fil conducteur, que vous veniez pour un bilan ou pour une VAE : écouter, construire, préparer, aboutir.</p>
+<!-- ===================== MÉTHODE EN 4 TEMPS ===================== -->
+<section class="band" data-screen-label="Méthode">
+  <div class="sviz" data-viz="process" style="opacity:.5;"></div>
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">La méthode Objectifs Carrières</span>
+      <h2 class="mega">La méthode en 4 temps</h2>
+      <p class="sub">Le même fil conducteur, que vous veniez pour un bilan ou pour une VAE : écouter, construire, préparer, aboutir.</p>
     </div>
-    <div class="steps reveal" data-delay="1" style="margin-top:40px; max-width:900px;">
-      <div class="step"><div class="step__no">1</div><div><h3>Écouter</h3><p>Tout commence par un entretien gratuit. On prend le temps de comprendre votre parcours, vos contraintes et votre objectif, pour choisir la voie la plus juste — sans rien vous vendre.</p></div></div>
-      <div class="step"><div class="step__no">2</div><div><h3>Construire</h3><p>VAE : montage de la recevabilité puis rédaction du livret 2, situation par situation. Bilan : exploration des compétences, des motivations et des pistes concrètes, avec un psychologue du travail.</p></div></div>
-      <div class="step"><div class="step__no">3</div><div><h3>Préparer</h3><p>Ateliers d'écriture, analyse de la pratique, entretiens blancs face à un jury simulé. On répète, on ajuste, on rassure : vous arrivez prêt·e et légitime.</p></div></div>
-      <div class="step"><div class="step__no">4</div><div><h3>Aboutir</h3><p>On vous accompagne jusqu'au jury et au-delà. Validation totale, partielle, poursuite d'études ou nouvelle étape : votre projet continue de vivre après le diplôme.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== FLORENCE MASSOL ===================== -->
-<section class="section" data-screen-label="Florence Massol">
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:center; gap:clamp(36px,5vw,72px);">
-      <div class="reveal portrait-mat" style="max-width:440px;">
-        <img class="portrait" src="/florence-massol.png" alt="Florence Massol, dirigeante d'Objectifs Carrières" width="1122" height="1402" loading="lazy" decoding="async" />
+    <div class="frise reveal" data-delay="1" style="margin-top:44px;">
+      <div class="frise__step">
+        <div class="frise__dot">1</div>
+        <h3>Écouter</h3>
+        <p>Tout commence par un entretien gratuit. On prend le temps de comprendre votre parcours, vos contraintes et votre objectif, pour choisir la voie la plus juste — sans rien vous vendre.</p>
       </div>
-      <div class="reveal" data-delay="1">
-        <span class="eyebrow">La dirigeante</span>
-        <p class="quote" style="margin:20px 0 0;">« On ne mesure pas toujours la valeur de ce qu'on fait au quotidien. <em>Mon métier, c'est de la rendre visible — et de la transformer en diplôme.</em> »</p>
-        <p style="margin-top:24px; color:var(--ink-2);">Florence Massol dirige Objectifs Carrières. Forte d'un parcours dans le secteur médico-social et la formation, elle a construit un organisme à son image : exigeant sur la qualité, profondément humain dans la relation. Elle suit personnellement la bonne marche de chaque accompagnement et veille à ce que personne ne reste sur le bord du chemin.</p>
-        <p style="margin-top:14px; color:var(--ink-2);">Sa conviction : l'expérience de terrain des professionnels du soin est une richesse trop souvent ignorée. La faire reconnaître, c'est leur rendre justice — et renforcer tout un secteur qui en a besoin.</p>
-        <div class="sviz sviz--wide" data-viz="pulse"></div>
+      <div class="frise__step">
+        <div class="frise__dot">2</div>
+        <h3>Construire</h3>
+        <p>VAE : montage de la recevabilité puis rédaction du livret 2, situation par situation. Bilan : exploration des compétences, des motivations et des pistes concrètes, avec un psychologue du travail.</p>
+      </div>
+      <div class="frise__step">
+        <div class="frise__dot">3</div>
+        <h3>Préparer</h3>
+        <p>Ateliers d'écriture, analyse de la pratique, entretiens blancs face à un jury simulé. On répète, on ajuste, on rassure : vous arrivez prêt·e et légitime.</p>
+      </div>
+      <div class="frise__step">
+        <div class="frise__dot">4</div>
+        <h3>Aboutir</h3>
+        <p>On vous accompagne jusqu'au jury et au-delà. Validation totale, partielle, poursuite d'études ou nouvelle étape : votre projet continue de vivre après le diplôme.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== ÉQUIPE ===================== -->
-<section class="section section--ink" id="equipe" data-screen-label="L'équipe">
-  <div class="sviz" data-viz="network"></div>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">L'équipe</span>
-      <h2 class="h-section">Des experts du soin, pas des généralistes</h2>
-      <p class="lead">Consultants, psychologues du travail, accompagnateurs VAE : toutes et tous connaissent le sanitaire et social de l'intérieur. C'est ce qui change tout.</p>
+<!-- ===================== FLORENCE (split pleine largeur) ===================== -->
+<section class="split" data-screen-label="Florence Massol">
+  <div class="split__img" style="background-image:url('/florence-massol.png');" role="img" aria-label="Florence Massol, dirigeante d'Objectifs Carrières"></div>
+  <div class="split__txt band--cream2">
+    <span class="kicker">La dirigeante</span>
+    <p class="mega" style="font-size:clamp(1.9rem,3.2vw,3rem); margin-top:14px; line-height:1.14;">« On ne mesure pas toujours la valeur de ce qu'on fait au quotidien. <em>Mon métier, c'est de la rendre visible.</em> »</p>
+    <p class="sub" style="margin-top:22px;">Florence Massol dirige Objectifs Carrières. Forte d'un parcours dans le secteur médico-social et la formation, elle a construit un organisme à son image : exigeant sur la qualité, profondément humain dans la relation. Elle suit personnellement la bonne marche de chaque accompagnement et veille à ce que personne ne reste sur le bord du chemin.</p>
+    <p style="margin-top:14px; color:var(--ink-2); max-width:60ch;">Sa conviction : l'expérience de terrain des professionnels du soin est une richesse trop souvent ignorée. La faire reconnaître, c'est leur rendre justice — et renforcer tout un secteur qui en a besoin.</p>
+    <a href="#equipe" class="card__link" style="margin-top:22px;">Rencontrer l'équipe <span class="arr">→</span></a>
+  </div>
+</section>
+
+<!-- ===================== ÉQUIPE (bande aubergine) ===================== -->
+<section class="band band--plum" id="equipe" data-screen-label="L'équipe">
+  <div class="sviz" data-viz="network" style="opacity:.4;"></div>
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">L'équipe</span>
+      <h2 class="mega">Des experts du soin, <em>pas des généralistes.</em></h2>
+      <p class="sub" style="color:rgba(255,255,255,.92);">Consultants, psychologues du travail, accompagnateurs VAE : toutes et tous connaissent le sanitaire et social de l'intérieur. C'est ce qui change tout.</p>
     </div>
-    <div class="team reveal" data-delay="1" style="margin-top:48px;">
-      <div class="team__card">
-        <div class="team__photo"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="2"/><path d="M7 34c0-7 6-11 13-11s13 4 13 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+    <div class="bento reveal" data-delay="1" style="margin-top:42px;">
+      <div class="bento__tile bento__tile--rose">
+        <span class="bento__num">01</span>
+        <span class="bento__k">Bilan de compétences</span>
         <h3>Consultant·e·s en bilan</h3>
-        <div class="team__role">Bilan de compétences</div>
         <p>Ils vous aident à faire le point sans jugement, à clarifier vos motivations et à bâtir un projet réaliste, étape par étape.</p>
       </div>
-      <div class="team__card">
-        <div class="team__photo"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 6a8 8 0 0 1 8 8c0 6-8 14-8 14s-8-8-8-14a8 8 0 0 1 8-8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="20" cy="14" r="3" stroke="currentColor" stroke-width="2"/></svg></div>
+      <div class="bento__tile bento__tile--gold">
+        <span class="bento__num">02</span>
+        <span class="bento__k">Écoute &amp; orientation</span>
         <h3>Psychologues du travail</h3>
-        <div class="team__role">Écoute &amp; orientation</div>
         <p>Ils apportent un regard professionnel sur vos aptitudes, vos valeurs et vos leviers de motivation, en toute confidentialité.</p>
       </div>
-      <div class="team__card">
-        <div class="team__photo"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M10 30V12l10-4 10 4v18" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 20l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="bento__tile bento__tile--plum">
+        <span class="bento__num">03</span>
+        <span class="bento__k">Experts sanitaire &amp; social</span>
         <h3>Accompagnateurs VAE</h3>
-        <div class="team__role">Experts sanitaire &amp; social</div>
         <p>Spécialistes des diplômes d'État du secteur, ils maîtrisent les référentiels et préparent chaque candidat à convaincre son jury.</p>
       </div>
     </div>
-    <p class="reveal" style="margin-top:28px; font-size:13px; color:#C0A6B2;">Composition nominative de l'équipe et qualifications détaillées disponibles sur demande.</p>
+    <p class="reveal" style="margin-top:26px; font-size:13px; color:#C0A6B2;">Composition nominative de l'équipe et qualifications détaillées disponibles sur demande.</p>
   </div>
 </section>
 
 <!-- ===================== CTA ===================== -->
-<section class="section cta-band" data-screen-label="CTA">
-  <div class="sviz" data-viz="gauge"></div>
-  <div class="wrap reveal">
-    <span class="eyebrow" style="justify-content:center;">Premier pas</span>
-    <h2 class="h-section">Faisons connaissance.</h2>
-    <p class="lead">Un échange gratuit suffit pour savoir par où commencer. On vous rappelle quand vous le souhaitez.</p>
-    <a href="/contact" class="btn btn--bordeaux btn--lg">Demander à être rappelé·e <span class="arr">→</span></a>
+<section class="band band--rose" data-screen-label="CTA" style="text-align:center;">
+  <div class="sviz" data-viz="gauge" style="opacity:.4;"></div>
+  <div class="bleed reveal">
+    <span class="kicker">Premier pas</span>
+    <h2 class="mega" style="max-width:18ch; margin:6px auto 0;">Faisons connaissance.</h2>
+    <p class="sub" style="margin:20px auto 30px; color:rgba(255,255,255,.92);">Un échange gratuit suffit pour savoir par où commencer. On vous rappelle quand vous le souhaitez.</p>
+    <a href="/contact" class="btn btn--lg" style="background:#fff; color:var(--bordeaux); border-color:#fff;">Demander à être rappelé·e <span class="arr">→</span></a>
   </div>
 </section>
 
-<footer class="site-footer">
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer head--wide">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="brand__name" style="font-size:1.5rem;">Objectifs <b style="color:var(--rose);">Carrières</b></span>
-        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan de compétences, VAE et VAE spécialisée, partout en France.</p>
-        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384</p>
+        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan, VAE, VAE spécialisée et CléA, partout en France.</p>
+        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384 · Lyon</p>
       </div>
       <div>
         <h4>Accompagnements</h4>
@@ -194,7 +202,8 @@
           <li><a href="/bilan-de-competences">Bilan de compétences</a></li>
           <li><a href="/vae">VAE — Validation des acquis</a></li>
           <li><a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a></li>
-          <li><a href="/accompagnement">Notre méthode</a></li>
+          <li><a href="/clea">Certification CléA</a></li>
+          <li><a href="/comparatif">Comparatif des dispositifs</a></li>
         </ul>
       </div>
       <div>
