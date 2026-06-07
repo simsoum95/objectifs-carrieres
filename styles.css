@@ -1019,6 +1019,13 @@ a.bento__tile:hover .go .arr { transform: translateX(4px); }
 @media (prefers-reduced-motion: no-preference) { .hero-caret { animation: caretBlink 1.05s step-end infinite; } }
 @keyframes caretBlink { 50% { opacity: 0; } }
 
+/* — Hero : rangée de chiffres-preuve — */
+.hero-stats { display: flex; gap: clamp(18px, 3vw, 44px); flex-wrap: wrap; margin-top: 32px; }
+.hero-stats > div { display: flex; flex-direction: column; }
+.hero-stat-num { font-family: var(--font-display); font-weight: 600; font-size: clamp(2.1rem, 3.4vw, 2.9rem); color: var(--bordeaux); line-height: 1; }
+.hero-stat-num small { font-size: .52em; font-weight: 600; }
+.hero-stat-lbl { font-size: 12.5px; color: var(--ink-2); margin-top: 5px; max-width: 17ch; line-height: 1.32; }
+
 /* Pastilles financement sur fond sombre */
 .band--ink .fin-pill, .band--plum .fin-pill { background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.16); color: #fff; }
 .band--ink .fin-pill .tick, .band--plum .fin-pill .tick { background: var(--bordeaux); color: #fff; }
