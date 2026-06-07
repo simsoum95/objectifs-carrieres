@@ -1030,14 +1030,20 @@ a.bento__tile:hover .go .arr { transform: translateX(4px); }
   /* grilles compactées pour tenir dans la hauteur d'écran */
   .bento { grid-auto-rows: 160px; }
   /* hero compacté pour tenir au plus près d'un écran */
-  .xhero h1.mega { font-size: clamp(2.4rem, 5vw, 4.6rem); }
-  .xhero__left { padding-top: 100px; padding-bottom: 44px; }
-  .xhero__left .sub { margin-top: 15px !important; }
-  .xhero__left .hero__cta { margin-top: 22px !important; }
-  .hero-rotate-line { margin-top: 12px; min-height: 2.05em; }
-  .hero-stats { margin-top: 22px; }
-  .hero-stat-num { font-size: clamp(1.9rem, 3vw, 2.5rem); }
-  .hero-feats { margin-top: 18px; gap: 11px 30px; }
+  .xhero h1.mega { font-size: clamp(2.2rem, 4.3vw, 4rem); }
+  .xhero__left { padding-top: 96px; padding-bottom: 40px; }
+  .xhero__left .sub { margin-top: 14px !important; }
+  .xhero__left .hero__cta { margin-top: 20px !important; }
+  .xhero__left > div:last-child { margin-top: 16px !important; }
+  .hero-rotate-line { margin-top: 11px; min-height: 2em; }
+  .hero-stats { margin-top: 18px; }
+  .hero-stat-num { font-size: clamp(1.8rem, 2.8vw, 2.4rem); }
+  .hero-feats { margin-top: 16px; gap: 10px 30px; }
+
+  /* Défilement section par section (scroll-snap) — jamais au milieu d'une section */
+  html { scroll-snap-type: y mandatory; }
+  .xhero, .band, .split, .site-footer { scroll-snap-align: start; scroll-snap-stop: always; }
+  .tape { scroll-snap-align: none; }
 }
 
 /* — Hero : métier qui défile — */
