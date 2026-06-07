@@ -8,3 +8,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+
+# fichier de spec interne (non déployé)
+_v2spec.md
