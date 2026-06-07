@@ -53,12 +53,14 @@ Cible : **Vercel** (domaine `www.objectifs-carrieres.fr`). `vercel.json` active 
 
 Aperçu local : n'importe quel serveur statique servant ce dossier (les liens sans extension nécessitent un serveur gérant les « clean URLs », ex. `npx serve`).
 
+## Identité légale (renseignée depuis le Kbis)
+
+SASU au capital de **500 €** · **RCS Lyon 918 536 384** (n° gestion 2022 B 07374) · siège **16 rue Cuvier, 69006 Lyon** · présidente **Florence Massol** · TVA **FR 87 918 536 384** · activité « formation continue pour adultes » · déclaration DREETS Auvergne-Rhône-Alpes du 20/12/2022. Hébergeur : **Vercel**. *(L'adresse personnelle et la date de naissance de la dirigeante figurant au Kbis ne sont volontairement pas publiées — RGPD.)*
+
 ## ⚠️ À compléter par le client (placeholders `[À COMPLÉTER]`)
 
-- **Coordonnées** : téléphone, e-mail de contact, adresse du siège.
-- **Réception du formulaire de contact** : `contact.html` poste vers FormSubmit (adresse à confirmer/activer — voir commentaire dans le fichier).
-- **Identité légale** : forme juridique & capital, RCS, n° TVA, hébergeur (pages légales).
-- **Agréments** : n° de déclaration d'activité (NDA), n° + date de certification **Qualiopi** et organisme certificateur.
+- **Coordonnées** : téléphone et e-mail de contact (et l'adresse de réception du formulaire — `contact.html` poste vers FormSubmit, à confirmer/activer).
+- **Agréments** : n° de déclaration d'activité (NDA) ; n° + date de certification **Qualiopi** et organisme certificateur.
 - **Indicateurs Qualiopi** : taux de réussite / satisfaction / abandon (les chiffres affichés sont **indicatifs** — voir commentaires `[À CONFIRMER]`).
 - **Référent handicap** (page Accessibilité) et **médiateur de la consommation** (CGV).
 - **Photo de Florence Massol** et de l'équipe (placeholders en place).
