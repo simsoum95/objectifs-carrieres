@@ -23,14 +23,14 @@
 </head>
 <body>
 
-<!-- ===================== HEADER ===================== -->
-<header class="site-header">
+<!-- ===================== HEADER (pleine largeur) ===================== -->
+<header class="site-header head--wide">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Objectifs Carrières, accueil">
       <span class="brand__mark" aria-hidden="true"><img src="/logo-mark.png" alt="" width="51" height="50" /></span>
       <span>
         <span class="brand__name">Objectifs <b>Carrières</b></span>
-        <span class="brand__sub">Bilan · VAE · sanitaire &amp; social</span>
+        <span class="brand__sub">Bilan · VAE · CléA · sanitaire &amp; social</span>
       </span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
@@ -41,7 +41,8 @@
           <a href="/bilan-de-competences">Bilan de compétences</a>
           <a href="/vae">VAE — Validation des acquis</a>
           <a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a>
-          <a href="/accompagnement" class="sub__all">Notre méthode d'accompagnement →</a>
+          <a href="/clea">Certification CléA</a>
+          <a href="/comparatif" class="sub__all">Comparer les 3 dispositifs →</a>
         </div>
       </div>
       <a href="/secteur-sanitaire-social">Sanitaire &amp; social</a>
@@ -61,35 +62,38 @@
   </div>
 </header>
 
-<!-- ===================== CONTACT ===================== -->
-<section class="section page-hero" data-screen-label="Contact">
-  <div class="wrap">
-    <div class="grid grid--2" style="gap:clamp(36px,5vw,72px); align-items:start;">
-      <div class="reveal">
-        <span class="eyebrow">Contact</span>
-        <h1 class="display">Commençons par échanger.</h1>
-        <p class="lead" style="margin-top:20px;">Le premier entretien est gratuit, confidentiel et sans engagement. Parlez-nous de votre situation : on vous indique la voie la plus juste, et on vérifie vos droits au financement.</p>
+<!-- ===================== CONTACT (pleine largeur, 2 colonnes) ===================== -->
+<section class="band" data-screen-label="Contact">
+  <div class="bleed">
+    <div class="duo" style="align-items:start;">
 
-        <div style="margin-top:34px; display:grid; gap:24px; max-width:420px;">
+      <!-- Colonne gauche : pitch + coordonnées -->
+      <div class="reveal">
+        <span class="kicker">Contact</span>
+        <h1 class="mega" style="margin-top:12px;">Commençons par <em>échanger.</em></h1>
+        <p class="sub" style="margin-top:20px;">Le premier entretien est gratuit, confidentiel et sans engagement. Parlez-nous de votre situation : on vous indique la voie la plus juste, et on vérifie vos droits au financement.</p>
+
+        <div style="margin-top:38px; display:grid; gap:26px; max-width:440px;">
           <div>
-            <p style="font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--bordeaux); margin:0 0 4px;">Par téléphone</p>
-            <p style="margin:0; font-size:1.15rem; color:var(--ink);"><a href="tel:+33000000000">[À COMPLÉTER]</a><br /><span style="font-size:13.5px; color:var(--muted);">Du lundi au vendredi, 9 h – 18 h</span></p>
+            <p class="kicker" style="color:var(--bordeaux); margin:0 0 6px;">Par téléphone</p>
+            <p style="margin:0; font-size:1.2rem; color:var(--ink);"><a href="tel:+33000000000">[À COMPLÉTER]</a><br /><span style="font-size:13.5px; color:var(--muted);">Du lundi au vendredi, 9 h – 18 h</span></p>
           </div>
           <div>
-            <p style="font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--bordeaux); margin:0 0 4px;">Par e-mail</p>
-            <p style="margin:0; font-size:1.15rem; color:var(--ink);"><a href="mailto:contact@objectifs-carrieres.fr">contact@objectifs-carrieres.fr</a></p>
+            <p class="kicker" style="color:var(--bordeaux); margin:0 0 6px;">Par e-mail</p>
+            <p style="margin:0; font-size:1.2rem; color:var(--ink);"><a href="mailto:contact@objectifs-carrieres.fr">contact@objectifs-carrieres.fr</a></p>
           </div>
           <div>
-            <p style="font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--bordeaux); margin:0 0 4px;">Présence</p>
+            <p class="kicker" style="color:var(--bordeaux); margin:0 0 6px;">Présence</p>
             <p style="margin:0; font-size:15px; color:var(--ink-2);">Accompagnement à distance partout en France, et rendez-vous sur site selon votre région. Spécialiste du secteur sanitaire, social et médico-social.</p>
           </div>
           <div>
-            <p style="font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--bordeaux); margin:0 0 4px;">L'organisme</p>
+            <p class="kicker" style="color:var(--bordeaux); margin:0 0 6px;">L'organisme</p>
             <p style="margin:0; font-size:15px; color:var(--ink-2);">Objectifs Carrières (SASU) — présidée par Florence Massol.<br />Siège : 16 rue Cuvier, 69006 Lyon.<br />Certifié Qualiopi · référencé Mon Compte Formation.<br />SIREN 918 536 384.</p>
           </div>
         </div>
       </div>
 
+      <!-- Colonne droite : formulaire (markup & logique INCHANGÉS) -->
       <div class="reveal" data-delay="1">
         <div class="aside-card" style="padding:clamp(24px,3vw,38px);">
           <!-- [À CONFIRMER] adresse de réception des demandes (FormSubmit, déjà activée pour le portefeuille) -->
@@ -157,18 +161,30 @@
           </form>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- ===================== CTA (bande pleine couleur) ===================== -->
+<section class="band band--plum" data-screen-label="CTA" style="text-align:center;">
+  <div class="sviz" data-viz="pulse" style="opacity:.4;"></div>
+  <div class="bleed reveal">
+    <span class="kicker">Premier pas</span>
+    <h2 class="mega" style="max-width:22ch; margin:6px auto 0;">Votre expérience mérite d'être reconnue.</h2>
+    <p class="sub" style="margin:20px auto 30px;">Écrivez-nous, ou laissez vos coordonnées : on vous rappelle, gratuitement et sans engagement.</p>
+    <a href="mailto:contact@objectifs-carrieres.fr" class="btn btn--bordeaux btn--lg">Nous écrire <span class="arr">→</span></a>
+  </div>
+</section>
+
 <!-- ===================== FOOTER ===================== -->
-<footer class="site-footer">
+<footer class="site-footer head--wide">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="brand__name" style="font-size:1.5rem;">Objectifs <b style="color:var(--rose);">Carrières</b></span>
-        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan de compétences, VAE et VAE spécialisée, partout en France.</p>
-        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384</p>
+        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan, VAE, VAE spécialisée et CléA, partout en France.</p>
+        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384 · Lyon</p>
       </div>
       <div>
         <h4>Accompagnements</h4>
@@ -176,7 +192,8 @@
           <li><a href="/bilan-de-competences">Bilan de compétences</a></li>
           <li><a href="/vae">VAE — Validation des acquis</a></li>
           <li><a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a></li>
-          <li><a href="/accompagnement">Notre méthode</a></li>
+          <li><a href="/clea">Certification CléA</a></li>
+          <li><a href="/comparatif">Comparatif des dispositifs</a></li>
         </ul>
       </div>
       <div>
@@ -254,5 +271,6 @@
 </script>
 <script src="site.js"></script>
 <script src="living.js"></script>
+<script src="section-viz.js"></script>
 </body>
 </html>
