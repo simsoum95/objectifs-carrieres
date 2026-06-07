@@ -1,0 +1,7 @@
+<svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Objectifs Carrières">
+  <path d="M5 39 a20 20 0 0 1 40 0" stroke="#C2996F" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M13 39 a12 12 0 0 1 24 0" stroke="#A8466A" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M25 39 L42 11" stroke="#A8466A" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="42" cy="11" r="3.7" fill="#A8466A"/>
+  <circle cx="25" cy="39" r="2.6" fill="#3B2140"/>
+</svg>

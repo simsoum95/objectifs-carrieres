@@ -1,0 +1,10 @@
+# Dépendances / cache
+node_modules/
+
+# Configuration locale de prévisualisation (Claude Code)
+.claude/
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+*.log

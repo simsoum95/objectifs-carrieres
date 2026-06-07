@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF6F1"/>
+      <stop offset="1" stop-color="#F5EAE3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="10" fill="#A8466A"/>
+  <g transform="translate(96,120)">
+    <path d="M0 96 a48 48 0 0 1 96 0" stroke="#C2996F" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M19 96 a29 29 0 0 1 58 0" stroke="#A8466A" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M48 96 L101 27" stroke="#A8466A" stroke-width="5.5" stroke-linecap="round"/>
+    <circle cx="101" cy="27" r="9" fill="#A8466A"/>
+  </g>
+  <text x="232" y="200" font-family="Georgia, 'Cormorant Garamond', serif" font-size="40" font-weight="600" letter-spacing="1" fill="#2D2230">Objectifs Carrières</text>
+  <text x="96" y="350" font-family="Georgia, 'Cormorant Garamond', serif" font-size="74" font-weight="700" fill="#2D2230">Donnez un cap à votre</text>
+  <text x="96" y="438" font-family="Georgia, 'Cormorant Garamond', serif" font-size="74" font-weight="700" fill="#A8466A" font-style="italic">carrière du soin.</text>
+  <text x="96" y="510" font-family="'Segoe UI', Arial, sans-serif" font-size="27" fill="#4C3D49">Bilan de compétences · VAE &amp; VAE spécialisée · sanitaire &amp; social</text>
+  <text x="96" y="566" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="700" letter-spacing="2" fill="#8A7882">CERTIFIÉ QUALIOPI · ÉLIGIBLE CPF · MON COMPTE FORMATION</text>
+</svg>
