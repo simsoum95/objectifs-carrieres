@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.objectifs-carrieres.fr/sitemap.xml
