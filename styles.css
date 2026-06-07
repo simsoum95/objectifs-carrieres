@@ -1031,6 +1031,13 @@ a.bento__tile:hover .go .arr { transform: translateX(4px); }
 .hero-stat-num small { font-size: .52em; font-weight: 600; }
 .hero-stat-lbl { font-size: 12.5px; color: var(--ink-2); margin-top: 5px; max-width: 17ch; line-height: 1.32; }
 
+/* — Hero : atouts (sous-titres sur 2 colonnes, occupent l'espace à droite) — */
+.hero-feats { list-style: none; padding: 0; margin: 26px 0 2px; display: grid; grid-template-columns: 1fr 1fr; gap: 13px 30px; max-width: 660px; }
+.hero-feats li { position: relative; padding-left: 24px; font-size: 14px; color: var(--ink-2); line-height: 1.35; }
+.hero-feats li::before { content: ""; position: absolute; left: 3px; top: 7px; width: 8px; height: 8px; background: var(--bordeaux); transform: rotate(45deg); }
+.hero-feats b { color: var(--ink); font-weight: 700; }
+@media (max-width: 560px) { .hero-feats { grid-template-columns: 1fr; gap: 11px; } }
+
 /* Pastilles financement sur fond sombre */
 .band--ink .fin-pill, .band--plum .fin-pill { background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.16); color: #fff; }
 .band--ink .fin-pill .tick, .band--plum .fin-pill .tick { background: var(--bordeaux); color: #fff; }
