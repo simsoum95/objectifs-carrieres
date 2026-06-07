@@ -1011,6 +1011,14 @@ a.bento__tile:hover .go .arr { transform: translateX(4px); }
 .duo { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
 @media (max-width: 820px) { .duo { grid-template-columns: 1fr; } }
 
+/* — Hero : métier qui défile — */
+.hero-rotate-line { font-family: var(--font-sans); font-weight: 800; font-size: clamp(1.3rem, 2.7vw, 2.3rem); line-height: 1.15; margin: 16px 0 0; color: var(--ink); letter-spacing: -.01em; min-height: 2.4em; }
+.hero-rotate { color: var(--bordeaux); display: inline-block; transition: opacity .3s var(--ease), transform .3s var(--ease); }
+.hero-rotate.is-out { opacity: 0; transform: translateY(-12px); }
+.hero-caret { display: inline-block; width: 3px; height: 1.05em; background: var(--bordeaux); margin-left: 5px; vertical-align: -3px; border-radius: 2px; }
+@media (prefers-reduced-motion: no-preference) { .hero-caret { animation: caretBlink 1.05s step-end infinite; } }
+@keyframes caretBlink { 50% { opacity: 0; } }
+
 /* Pastilles financement sur fond sombre */
 .band--ink .fin-pill, .band--plum .fin-pill { background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.16); color: #fff; }
 .band--ink .fin-pill .tick, .band--plum .fin-pill .tick { background: var(--bordeaux); color: #fff; }
