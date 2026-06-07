@@ -808,3 +808,114 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 720px) { .consent { bottom: 84px; } .consent__btns { margin-left: 0; } }
 
 @media (max-width: 720px) { .brand__mark img { height: 42px; } }
+
+/* =================================================================
+   IDENTITÉ PROPRE À OBJECTIFS CARRIÈRES — modules originaux
+   Orienteur · Comparateur · Explorateur · Frise · Spotlight · Ticker.
+   (Volontairement différents du style « institutionnel » classique.)
+   ================================================================= */
+
+/* — Bandeau de réassurance défilant (sous le hero, optionnel) — */
+.assure { border-block: 1px solid var(--line); background: var(--white); }
+.assure .wrap { display: flex; align-items: center; justify-content: center; gap: clamp(20px, 5vw, 64px); flex-wrap: wrap; padding-block: 18px; }
+.assure span { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 700; color: var(--ink); }
+.assure b { color: var(--bordeaux); }
+
+/* — ORIENTEUR : 3 grandes portes d'entrée — */
+.orient { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2vw, 24px); }
+.orient__card { position: relative; overflow: hidden; border-radius: 16px; padding: 30px 28px 26px; min-height: 240px; display: flex; flex-direction: column; justify-content: flex-end; color: var(--paper); box-shadow: var(--shadow-card); transition: transform .45s var(--ease), box-shadow .45s var(--ease); }
+.orient__card:hover { transform: translateY(-7px); box-shadow: 0 34px 64px -30px rgba(59,33,64,.5); }
+.orient__card--plum { background: linear-gradient(160deg, var(--plum-2), var(--plum)); }
+.orient__card--rose { background: linear-gradient(160deg, var(--bordeaux-2), var(--bordeaux)); }
+.orient__card--gold { background: linear-gradient(160deg, #C9A079, #B07F4F); }
+.orient__num { position: absolute; top: 14px; right: 22px; font-family: var(--font-display); font-size: 3.4rem; line-height: 1; opacity: .26; }
+.orient__card .k { font-size: 11.5px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; opacity: .9; }
+.orient__card h3 { color: var(--paper); font-size: 1.65rem; margin: 8px 0; line-height: 1.1; }
+.orient__card p { font-size: 14.5px; opacity: .92; margin: 0 0 14px; }
+.orient__card .go { font-weight: 800; font-size: 13.5px; letter-spacing: .02em; display: inline-flex; align-items: center; gap: .5em; }
+.orient__card .go .arr { transition: transform .3s var(--ease); }
+.orient__card:hover .go .arr { transform: translateX(5px); }
+@media (max-width: 880px) { .orient { grid-template-columns: 1fr; } .orient__card { min-height: 0; } }
+
+/* — COMPARATEUR : 3 plans côte à côte — */
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2vw, 26px); align-items: stretch; margin-top: 18px; }
+.plan { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 32px 26px 28px; display: flex; flex-direction: column; position: relative; transition: transform .4s var(--ease), box-shadow .4s var(--ease); }
+.plan:hover { transform: translateY(-5px); box-shadow: var(--shadow-card); }
+.plan--feature { border-color: var(--bordeaux); box-shadow: 0 0 0 4px var(--bordeaux-wash); }
+.plan__badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--bordeaux); color: #fff; font-size: 10.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; white-space: nowrap; }
+.plan h3 { font-size: 1.7rem; }
+.plan__tag { color: var(--bordeaux); font-weight: 700; font-size: 13.5px; margin: 4px 0 18px; }
+.plan__rows { list-style: none; padding: 0; margin: 0 0 22px; display: grid; gap: 0; }
+.plan__rows li { display: grid; grid-template-columns: 92px 1fr; gap: 12px; font-size: 14.5px; color: var(--ink-2); border-top: 1px solid var(--line-soft); padding: 12px 0; align-items: baseline; }
+.plan__rows li i { font-style: normal; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.plan__rows b { color: var(--ink); }
+.plan .btn { margin-top: auto; justify-content: center; }
+@media (max-width: 880px) { .plans { grid-template-columns: 1fr; } }
+
+/* — FRISE horizontale animée — */
+.frise { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 10px; padding-top: 6px; }
+.frise::before { content: ""; position: absolute; top: 18px; left: 7%; right: 7%; height: 3px; border-radius: 2px; background-image: repeating-linear-gradient(90deg, var(--bordeaux) 0 8px, transparent 8px 16px); background-size: 32px 100%; }
+.frise__step { text-align: center; position: relative; padding: 0 6px; }
+.frise__dot { width: 40px; height: 40px; border-radius: 50%; background: var(--white); border: 2px solid var(--bordeaux); color: var(--bordeaux); font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; display: grid; place-items: center; margin: 0 auto 16px; position: relative; z-index: 1; box-shadow: 0 0 0 7px var(--paper); }
+.section--paper2 .frise__dot { box-shadow: 0 0 0 7px var(--paper-2); }
+.frise__step h4 { font-size: 1.05rem; font-family: var(--font-sans); font-weight: 700; margin: 0 0 5px; }
+.frise__step p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.45; }
+@media (prefers-reduced-motion: no-preference) { .frise::before { animation: flowRight 1.2s linear infinite; } }
+@media (max-width: 760px) {
+  .frise { grid-auto-flow: row; grid-auto-columns: auto; padding-top: 0; padding-left: 8px; }
+  .frise::before { top: 6px; bottom: 6px; left: 27px; right: auto; width: 3px; height: auto; background-image: repeating-linear-gradient(180deg, var(--bordeaux) 0 8px, transparent 8px 16px); background-size: 100% 32px; }
+  .frise__step { text-align: left; display: grid; grid-template-columns: 40px 1fr; gap: 16px; padding: 0 0 28px; align-items: start; }
+  .frise__dot { margin: 0; box-shadow: 0 0 0 6px var(--paper); }
+  @media (prefers-reduced-motion: no-preference) { .frise::before { animation: flowDown 1.2s linear infinite; } }
+}
+
+/* — EXPLORATEUR de diplômes (onglets interactifs) — */
+.explorer__tabs { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 32px; }
+.explorer__tab { font-family: var(--font-sans); font-weight: 700; font-size: 14px; padding: 10px 20px; border-radius: 999px; border: 1px solid var(--line); background: var(--white); color: var(--ink); cursor: pointer; transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease); }
+.explorer__tab:hover { border-color: var(--bordeaux-2); color: var(--bordeaux); }
+.explorer__tab.active { background: var(--bordeaux); border-color: var(--bordeaux); color: #fff; }
+.explorer__panel { display: none; }
+.explorer__panel.active { display: block; animation: fadeUp .45s var(--ease); }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* — SPOTLIGHT CléA — */
+.spot { background: linear-gradient(150deg, var(--plum), #29162E); border-radius: 22px; padding: clamp(30px, 5vw, 60px); color: var(--paper); position: relative; overflow: hidden; }
+.spot__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(28px, 4vw, 56px); align-items: center; position: relative; z-index: 1; }
+.spot h2 { color: var(--paper); }
+.spot .lead { color: #E7D7DE; }
+.spot .eyebrow { color: var(--rose); }
+.spot .eyebrow::before { background: var(--rose); }
+.spot__domains { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.spot__d { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.13); border-radius: 11px; padding: 13px 15px; font-size: 13.5px; font-weight: 600; color: var(--paper); }
+.spot__d b { color: var(--rose); display: block; font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; margin-bottom: 3px; font-weight: 800; }
+.spot .sviz { opacity: .5; }
+@media (max-width: 860px) { .spot__grid { grid-template-columns: 1fr; } }
+
+/* — TICKER témoignages (marquee) — */
+.ticker { overflow: hidden; margin-top: 8px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+.ticker__track { display: flex; gap: 20px; width: max-content; }
+.ticker .tmoin { width: 330px; flex: none; margin: 0; }
+@media (prefers-reduced-motion: no-preference) { .ticker__track { animation: marquee 52s linear infinite; } .ticker:hover .ticker__track { animation-play-state: paused; } }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* — Citation mise en avant + grand nombre éditorial — */
+.feature-quote { font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: clamp(1.7rem, 3.2vw, 2.7rem); line-height: 1.3; color: var(--ink); }
+.feature-quote em { color: var(--bordeaux); font-style: italic; }
+.bignum { font-family: var(--font-display); font-weight: 600; font-size: clamp(4.2rem, 13vw, 9.5rem); line-height: .86; color: var(--bordeaux); letter-spacing: -.02em; }
+.bignum + .bignum-label { font-size: 1.05rem; color: var(--ink-2); max-width: 26ch; }
+
+/* — Pastilles de financement — */
+.fin-pills { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.fin-pill { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; font-size: 14px; font-weight: 600; color: var(--ink); display: flex; align-items: center; gap: 10px; transition: border-color .3s var(--ease), transform .3s var(--ease); }
+.fin-pill:hover { border-color: var(--bordeaux-2); transform: translateY(-2px); }
+.fin-pill .tick { width: 22px; height: 22px; border-radius: 50%; background: var(--bordeaux-wash); color: var(--bordeaux); display: grid; place-items: center; font-size: 12px; font-weight: 900; flex: none; }
+
+/* — Bloc « grand chiffre + différenciateurs » — */
+.why-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+@media (max-width: 880px) { .why-grid { grid-template-columns: 1fr; } }
+.diffs { display: grid; gap: 16px; }
+.diff { display: grid; grid-template-columns: 46px 1fr; gap: 16px; align-items: start; }
+.diff__ico { width: 46px; height: 46px; border-radius: 12px; background: var(--bordeaux-wash); color: var(--bordeaux); display: grid; place-items: center; }
+.diff__ico svg { width: 24px; height: 24px; }
+.diff h4 { font-size: 1.15rem; font-family: var(--font-sans); font-weight: 700; margin: 2px 0 4px; }
+.diff p { font-size: 14.5px; color: var(--ink-2); margin: 0; }
