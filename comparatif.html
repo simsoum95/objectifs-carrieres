@@ -23,7 +23,8 @@
 </head>
 <body>
 
-<header class="site-header">
+<!-- ===================== HEADER (pleine largeur) ===================== -->
+<header class="site-header head--wide">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Objectifs Carrières, accueil">
       <span class="brand__mark" aria-hidden="true"><img src="/logo-mark.png" alt="" width="51" height="50" /></span>
@@ -61,19 +62,26 @@
   </div>
 </header>
 
-<!-- PAGE HERO -->
-<section class="section page-hero" data-screen-label="Comparatif">
-  <div class="wrap">
-    <span class="eyebrow reveal in">Comparatif</span>
-    <h1 class="display reveal in" data-delay="1">Bilan, VAE ou CléA&nbsp;: <em>laquelle choisir&nbsp;?</em></h1>
-    <p class="lead reveal in" data-delay="2" style="margin-top:22px;">Trois dispositifs souvent confondus, mais trois objectifs bien différents. Voici, côte à côte, tout ce qu'il faut savoir pour choisir — et on en parle ensemble si vous hésitez.</p>
+<!-- ===================== HERO (bande crème) ===================== -->
+<section class="band" data-screen-label="Comparatif">
+  <div class="bleed">
+    <div class="band__head reveal in">
+      <span class="kicker">Comparatif</span>
+      <h1 class="mega">Bilan, VAE ou CléA : <em>laquelle choisir&nbsp;?</em></h1>
+      <p class="sub" style="margin-top:22px;">Trois dispositifs souvent confondus, mais trois objectifs bien différents. Voici, côte à côte, tout ce qu'il faut savoir pour choisir — et on en parle ensemble si vous hésitez.</p>
+    </div>
   </div>
 </section>
 
-<!-- LES 3 PLANS -->
-<section class="section" style="padding-top:0;" data-screen-label="Les 3 dispositifs">
-  <div class="wrap">
-    <div class="plans reveal">
+<!-- ===================== LES 3 DISPOSITIFS (plans pleine largeur) ===================== -->
+<section class="band band--cream2" data-screen-label="Les 3 dispositifs">
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">En un coup d'œil</span>
+      <h2 class="mega">Trois voies, trois objectifs.</h2>
+      <p class="sub">L'essentiel de chaque dispositif, résumé. Le détail ligne par ligne suit juste en dessous.</p>
+    </div>
+    <div class="plans reveal" data-delay="1" style="margin-top:42px;">
       <div class="plan">
         <h3>Bilan de compétences</h3>
         <div class="plan__tag">Faire le point</div>
@@ -109,14 +117,17 @@
   </div>
 </section>
 
-<!-- TABLEAU DÉTAILLÉ -->
-<section class="section section--paper2" data-screen-label="Tableau détaillé">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Dans le détail</span>
-      <h2 class="h-section">Le comparatif, ligne par ligne</h2>
+<!-- ===================== TABLEAU DÉTAILLÉ (pleine largeur) ===================== -->
+<section class="band" data-screen-label="Tableau détaillé">
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">Dans le détail</span>
+      <h2 class="mega">Le comparatif ligne par ligne.</h2>
+      <p class="sub">Objectif, public, durée, modalités, financement… tout est posé noir sur blanc.</p>
     </div>
-    <div class="prose reveal" data-delay="1" style="max-width:100%; margin-top:30px;">
+  </div>
+  <div class="bleed reveal" data-delay="1" style="margin-top:30px;">
+    <div class="prose" style="max-width:100%;">
       <table>
         <thead>
           <tr><th style="width:18%;"></th><th>Bilan de compétences</th><th>VAE</th><th>CléA</th></tr>
@@ -136,51 +147,59 @@
   </div>
 </section>
 
-<!-- COMMENT CHOISIR -->
-<section class="section" data-screen-label="Comment choisir">
-  <div class="sviz" data-viz="process"></div>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Aide au choix</span>
-      <h2 class="h-section">En une phrase, laquelle est faite pour vous</h2>
+<!-- ===================== COMMENT CHOISIR (bande aubergine) ===================== -->
+<section class="band band--plum" data-screen-label="Comment choisir">
+  <div class="sviz" data-viz="process" style="opacity:.4;"></div>
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">Aide au choix</span>
+      <h2 class="mega">En une phrase, laquelle est faite pour vous.</h2>
+      <p class="sub" style="color:rgba(255,255,255,.92);">Reconnaissez-vous votre situation dans l'une de ces trois phrases&nbsp;? C'est votre point de départ.</p>
     </div>
-    <div class="grid grid--3 reveal" data-delay="1" style="margin-top:44px;">
-      <div class="card">
-        <h3 style="font-size:1.4rem;">« Je ne sais pas où aller »</h3>
-        <p style="color:var(--ink-2);">Commencez par un <strong>bilan de compétences</strong> : il pose les bases d'un projet clair et réaliste.</p>
-        <a href="/bilan-de-competences" class="card__link">Le bilan <span class="arr">→</span></a>
-      </div>
-      <div class="card">
-        <h3 style="font-size:1.4rem;">« Je fais déjà le métier »</h3>
-        <p style="color:var(--ink-2);">Visez la <strong>VAE</strong> : votre expérience peut devenir un diplôme d'État reconnu.</p>
-        <a href="/vae-sanitaire-social" class="card__link">La VAE <span class="arr">→</span></a>
-      </div>
-      <div class="card">
-        <h3 style="font-size:1.4rem;">« Je n'ai pas de diplôme »</h3>
-        <p style="color:var(--ink-2);">Sécurisez vos acquis avec <strong>CléA</strong>, puis enchaînez sereinement vers une VAE.</p>
-        <a href="/clea" class="card__link">CléA <span class="arr">→</span></a>
-      </div>
+    <div class="bento reveal" data-delay="1" style="margin-top:42px;">
+      <a class="bento__tile t-2w bento__tile--rose" href="/bilan-de-competences">
+        <span class="bento__num">01</span>
+        <span class="bento__k">« Je ne sais pas où aller »</span>
+        <h3>Commencez par un bilan de compétences</h3>
+        <p>Il pose les bases d'un projet clair et réaliste, avant tout engagement.</p>
+        <span class="go">Le bilan <span class="arr">→</span></span>
+      </a>
+      <a class="bento__tile bento__tile--gold" href="/vae-sanitaire-social">
+        <span class="bento__num">02</span>
+        <span class="bento__k">« Je fais déjà le métier »</span>
+        <h3>Visez la VAE</h3>
+        <p>Votre expérience peut devenir un diplôme d'État reconnu.</p>
+        <span class="go">La VAE <span class="arr">→</span></span>
+      </a>
+      <a class="bento__tile" href="/clea">
+        <span class="bento__num">03</span>
+        <span class="bento__k">« Je n'ai pas de diplôme »</span>
+        <h3>Sécurisez vos acquis avec CléA</h3>
+        <p>Puis enchaînez sereinement vers une VAE.</p>
+        <span class="go">CléA <span class="arr">→</span></span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="section section--ink cta-band" data-screen-label="CTA">
-  <div class="sviz" data-viz="gauge"></div>
-  <div class="wrap reveal">
-    <span class="eyebrow" style="justify-content:center;">On vous guide</span>
-    <h2 class="h-section">Toujours un doute&nbsp;? C'est normal.</h2>
-    <p class="lead">En un échange gratuit, on identifie ensemble le dispositif le plus juste pour votre situation.</p>
+<!-- ===================== CTA (bande encre) ===================== -->
+<section class="band band--ink" data-screen-label="CTA" style="text-align:center;">
+  <div class="sviz" data-viz="gauge" style="opacity:.4;"></div>
+  <div class="bleed reveal">
+    <span class="kicker">On vous guide</span>
+    <h2 class="mega" style="max-width:22ch; margin:6px auto 0;">Toujours un doute&nbsp;? C'est normal.</h2>
+    <p class="sub" style="margin:20px auto 30px;">En un échange gratuit, on identifie ensemble le dispositif le plus juste pour votre situation.</p>
     <a href="/contact" class="btn btn--bordeaux btn--lg">Demander à être rappelé·e <span class="arr">→</span></a>
   </div>
 </section>
 
-<footer class="site-footer">
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer head--wide">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="brand__name" style="font-size:1.5rem;">Objectifs <b style="color:var(--rose);">Carrières</b></span>
-        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan de compétences, VAE, VAE spécialisée et CléA, partout en France.</p>
+        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan, VAE, VAE spécialisée et CléA, partout en France.</p>
         <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384 · Lyon</p>
       </div>
       <div>
