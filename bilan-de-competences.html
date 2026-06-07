@@ -20,18 +20,17 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
 <link rel="stylesheet" href="styles.css" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Objectifs Carrières","url":"https://www.objectifs-carrieres.fr","logo":"https://www.objectifs-carrieres.fr/logo11.png","image":"https://www.objectifs-carrieres.fr/og-image.png","description":"Organisme spécialisé dans l'accompagnement de carrière du secteur sanitaire et social : bilan de compétences, VAE et VAE spécialisée. Certifié Qualiopi, éligible CPF.","founder":{"@type":"Person","name":"Florence Massol"},"areaServed":"FR","sameAs":["https://www.pappers.fr/entreprise/objectifs-carrieres-918536384"]}</script>
 </head>
 <body>
 
-<!-- ===================== HEADER ===================== -->
-<header class="site-header">
+<!-- ===================== HEADER (pleine largeur) ===================== -->
+<header class="site-header head--wide">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Objectifs Carrières, accueil">
       <span class="brand__mark" aria-hidden="true"><img src="/logo-mark.png" alt="" width="51" height="50" /></span>
       <span>
         <span class="brand__name">Objectifs <b>Carrières</b></span>
-        <span class="brand__sub">Bilan · VAE · sanitaire &amp; social</span>
+        <span class="brand__sub">Bilan · VAE · CléA · sanitaire &amp; social</span>
       </span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
@@ -42,7 +41,8 @@
           <a href="/bilan-de-competences">Bilan de compétences</a>
           <a href="/vae">VAE — Validation des acquis</a>
           <a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a>
-          <a href="/accompagnement" class="sub__all">Notre méthode d'accompagnement →</a>
+          <a href="/clea">Certification CléA</a>
+          <a href="/comparatif" class="sub__all">Comparer les 3 dispositifs →</a>
         </div>
       </div>
       <a href="/secteur-sanitaire-social">Sanitaire &amp; social</a>
@@ -62,33 +62,19 @@
   </div>
 </header>
 
-<!-- ===================== HERO ===================== -->
-<section class="hero hero--page" data-screen-label="Bilan — Hero">
-  <div class="hero__sky"></div>
-  <div class="hero__scene" id="scene" data-scene="approche"></div>
-  <div class="hero__scrim"></div>
-
-  <div class="wrap">
-    <div class="hero__inner">
-      <span class="eyebrow reveal in">Bilan de compétences · éligible CPF</span>
-      <h1 class="reveal in" data-delay="1">Faire le point, <em>révéler vos talents.</em></h1>
-      <p class="hero__lead reveal in" data-delay="2">
-        Le bilan de compétences est une étape protégée et confidentielle pour faire le point et bâtir
-        un projet réaliste. Il est particulièrement précieux pour les soignants et accompagnants qui
-        s'interrogent sur leur voie — après des années sur le terrain, une période difficile, ou
-        simplement l'envie d'évoluer.
-      </p>
-      <div class="hero__cta reveal in" data-delay="3">
+<!-- ===================== HERO (band crème) ===================== -->
+<section class="band" data-screen-label="Bilan — Hero">
+  <div class="sviz" data-viz="pulse"></div>
+  <div class="bleed">
+    <div class="band__head reveal in" style="max-width:none;">
+      <span class="kicker">Bilan de compétences · éligible CPF</span>
+      <h1 class="mega" data-delay="1">Faire le point, <em>révéler vos talents.</em></h1>
+      <p class="sub" data-delay="2" style="margin-top:24px;">Une étape protégée et confidentielle pour faire le point et bâtir un projet réaliste. Particulièrement précieuse pour les soignants et accompagnants qui s'interrogent sur leur voie — après des années sur le terrain, une période difficile, ou simplement l'envie d'évoluer.</p>
+      <div class="hero__cta reveal in" data-delay="3" style="margin-top:34px;">
         <a href="/contact" class="btn btn--lg">Être rappelé·e <span class="arr">→</span></a>
         <a href="/financement" class="btn btn--ghost btn--lg">Vérifier mes droits CPF</a>
       </div>
-    </div>
-  </div>
-
-  <div class="trust">
-    <div class="wrap">
-      <span class="trust__label">L'essentiel</span>
-      <div class="trust__items">
+      <div class="reveal in" data-delay="3" style="margin-top:38px; display:flex; flex-wrap:wrap; gap:10px 22px; font-size:13.5px; font-weight:700; color:var(--ink);">
         <span class="trust__item"><span class="dot"></span>24 h sur 6 mois</span>
         <span class="trust__item"><span class="dot"></span>100 % confidentiel</span>
         <span class="trust__item"><span class="dot"></span>Visio ou présentiel</span>
@@ -99,18 +85,13 @@
 </section>
 
 <!-- ===================== DÉFINITION ===================== -->
-<section class="section" data-screen-label="Définition">
-  <div class="sviz" data-viz="pulse"></div>
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:center; gap:clamp(40px,6vw,90px);">
-      <div class="reveal">
-        <span class="eyebrow">Qu'est-ce qu'un bilan ?</span>
-        <h2 class="h-section" style="margin-top:18px;">Un droit, encadré par la loi</h2>
-        <p class="lead" style="margin-top:20px;">
-          Le bilan de compétences est défini par le Code du travail (art. L.6313-1). C'est avant tout
-          <strong>votre</strong> démarche : votre employeur ne peut ni l'imposer, ni accéder à la synthèse
-          qui en découle. Vous restez seul·e maître de vos conclusions et de leur usage.
-        </p>
+<section class="band band--cream2" data-screen-label="Définition">
+  <div class="bleed">
+    <div class="duo">
+      <div class="band__head reveal" style="max-width:none;">
+        <span class="kicker">Qu'est-ce qu'un bilan&nbsp;?</span>
+        <h2 class="mega">Un droit, <em>encadré par la loi.</em></h2>
+        <p class="sub" style="margin-top:18px;">Le bilan de compétences est défini par le Code du travail (art. L.6313-1). C'est avant tout <strong>votre</strong> démarche : votre employeur ne peut ni l'imposer, ni accéder à la synthèse qui en découle. Vous restez seul·e maître de vos conclusions et de leur usage.</p>
       </div>
       <div class="reveal" data-delay="1">
         <ul class="ticks">
@@ -126,73 +107,89 @@
 </section>
 
 <!-- ===================== LES 3 PHASES ===================== -->
-<section class="section section--paper2" data-screen-label="Les 3 phases">
+<section class="band" data-screen-label="Les 3 phases">
   <div class="sviz" data-viz="process"></div>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Le déroulé</span>
-      <h2 class="h-section">Trois phases, 24 heures, jamais seul·e</h2>
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">Le déroulé</span>
+      <h2 class="mega">Trois phases, 24 heures,<br />jamais seul·e.</h2>
+      <p class="sub">Un cadre clair, du premier rendez-vous à la synthèse — toujours accompagné·e par un consultant dédié.</p>
     </div>
-    <div class="steps reveal" data-delay="1" style="margin-top:40px; max-width:900px;">
-      <div class="step">
-        <div class="step__no">1</div>
-        <div>
-          <h3>Phase préliminaire <span style="color:var(--muted); font-size:1rem;">· 2 à 4 h</span></h3>
-          <p>On confirme votre engagement dans la démarche, on analyse précisément votre besoin et on définit ensemble le format le plus adapté à votre situation.</p>
-        </div>
+    <div class="frise reveal" data-delay="1" style="margin-top:42px;">
+      <div class="frise__step">
+        <span class="frise__dot">1</span>
+        <h3>Phase préliminaire <span style="color:var(--muted); font-weight:600;">· 2 à 4 h</span></h3>
+        <p>On confirme votre engagement dans la démarche, on analyse précisément votre besoin et on définit ensemble le format le plus adapté à votre situation.</p>
       </div>
-      <div class="step">
-        <div class="step__no">2</div>
-        <div>
-          <h3>Phase d'investigation <span style="color:var(--muted); font-size:1rem;">· 16 à 18 h</span></h3>
-          <p>Le cœur du bilan : exploration de votre parcours, tests et questionnaires, travail avec un <strong>psychologue du travail</strong>, puis confrontation au réel du terrain — métiers, débouchés et réalités du sanitaire &amp; social.</p>
-        </div>
+      <div class="frise__step">
+        <span class="frise__dot">2</span>
+        <h3>Phase d'investigation <span style="color:var(--muted); font-weight:600;">· 16 à 18 h</span></h3>
+        <p>Le cœur du bilan : exploration de votre parcours, tests et questionnaires, travail avec un <strong>psychologue du travail</strong>, puis confrontation au réel du terrain — métiers, débouchés et réalités du sanitaire &amp; social.</p>
       </div>
-      <div class="step">
-        <div class="step__no">3</div>
-        <div>
-          <h3>Phase de conclusion <span style="color:var(--muted); font-size:1rem;">· 2 à 4 h</span></h3>
-          <p>Restitution de l'ensemble du travail, construction d'un plan d'action concret et remise d'un <strong>document de synthèse confidentiel</strong> qui vous appartient.</p>
-        </div>
+      <div class="frise__step">
+        <span class="frise__dot">3</span>
+        <h3>Phase de conclusion <span style="color:var(--muted); font-weight:600;">· 2 à 4 h</span></h3>
+        <p>Restitution de l'ensemble du travail, construction d'un plan d'action concret et remise d'un <strong>document de synthèse confidentiel</strong> qui vous appartient.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===================== MODALITÉS & FINANCEMENT ===================== -->
-<section class="section" data-screen-label="Modalités & financement">
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:start; gap:clamp(40px,5vw,80px);">
-      <div class="prose reveal">
-        <h2>Pour qui, comment ?</h2>
-        <p>Le bilan de compétences s'adresse à toute personne active qui veut faire le point : salarié·e du privé, demandeur·euse d'emploi, ou agent de la fonction publique hospitalière.</p>
-        <p>Il se déroule sur une durée de <strong>24 heures maximum, étalées sur 6 mois</strong>, à votre rythme. Concrètement, cela représente en général <strong>7 à 12 séances de 2 à 3 heures</strong>, organisées selon vos disponibilités.</p>
-        <p>Trois formats possibles, selon ce qui vous convient : en <strong>visio</strong>, en <strong>présentiel</strong>, ou en formule <strong>hybride</strong> mêlant les deux.</p>
+<section class="band band--plum" data-screen-label="Modalités & financement">
+  <div class="bleed">
+    <div class="duo">
+      <div class="reveal">
+        <span class="kicker">Pour qui, comment&nbsp;?</span>
+        <h2 class="mega" style="margin-top:12px;">Souple, à <em>votre rythme.</em></h2>
+        <p class="sub" style="margin-top:18px; color:rgba(255,255,255,.92);">Le bilan s'adresse à toute personne active qui veut faire le point : salarié·e du privé, demandeur·euse d'emploi, ou agent de la fonction publique hospitalière.</p>
+        <p class="sub" style="margin-top:14px; color:rgba(255,255,255,.92);">Il se déroule sur <strong>24 heures maximum, étalées sur 6 mois</strong> — en général <strong>7 à 12 séances de 2 à 3 heures</strong>, organisées selon vos disponibilités.</p>
+        <p class="sub" style="margin-top:14px; color:rgba(255,255,255,.92);">Trois formats possibles : en <strong>visio</strong>, en <strong>présentiel</strong>, ou en formule <strong>hybride</strong> mêlant les deux.</p>
       </div>
       <div class="reveal" data-delay="1">
-        <div class="aside-card">
-          <span class="eyebrow">Financement</span>
-          <h3 style="margin-top:14px;">100 % finançable</h3>
-          <div class="price">100 %<small> via votre CPF</small></div>
-          <p style="margin-top:16px; color:var(--ink-2); font-size:15px;">Objectifs Carrières est un organisme certifié Qualiopi, référencé sur Mon Compte Formation. D'autres dispositifs peuvent prendre le relais : Transitions Pro, France Travail, ou le plan de développement des compétences de votre employeur.</p>
-          <a href="/financement" class="card__link" style="margin-top:8px;">Tout savoir sur le financement <span class="arr">→</span></a>
+        <div style="background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.22); border-radius:16px; padding:clamp(24px,3vw,34px);">
+          <span class="kicker">Financement</span>
+          <div class="maxi" style="color:#fff; margin:6px 0 0; line-height:1;">100&nbsp;%<span style="font-size:.22em; vertical-align:super; font-weight:700;"> finançable</span></div>
+          <p style="font-size:15px; font-weight:700; color:#fff; margin-top:4px;">via votre CPF</p>
+          <p style="margin-top:16px; color:rgba(255,255,255,.85); font-size:15px; line-height:1.55;">Objectifs Carrières est un organisme certifié Qualiopi, référencé sur Mon Compte Formation. D'autres dispositifs peuvent prendre le relais : Transitions Pro, France Travail, ou le plan de développement des compétences de votre employeur.</p>
+          <a href="/financement" class="btn btn--lg" style="background:#fff; color:var(--bordeaux); border-color:#fff; margin-top:22px;">Tout savoir sur le financement <span class="arr">→</span></a>
         </div>
-        <div class="notice" style="margin-top:24px;">
-          Le premier entretien découverte est <strong>gratuit et sans engagement</strong> : l'occasion de vérifier vos droits et de voir si la démarche vous correspond.
-        </div>
+        <p style="margin-top:20px; font-size:14.5px; font-weight:600; color:rgba(255,255,255,.92); display:flex; gap:10px; align-items:flex-start;"><span class="dot" style="margin-top:7px; flex:none;"></span><span>Premier entretien découverte <strong>gratuit et sans engagement</strong> : l'occasion de vérifier vos droits et de voir si la démarche vous correspond.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ALLER PLUS LOIN — CléA ===================== -->
+<section class="band band--cream2" data-screen-label="CléA">
+  <div class="bleed">
+    <div class="duo">
+      <div class="reveal">
+        <span class="kicker">Aller plus loin</span>
+        <h2 class="mega" style="margin-top:12px;">Sécurisez vos bases <em>avec CléA.</em></h2>
+        <p class="sub" style="margin-top:18px;">CléA certifie officiellement votre socle de connaissances et de compétences professionnelles. C'est le complément idéal d'un bilan : une preuve reconnue de vos acquis, précieuse avant une reconversion ou une VAE.</p>
+        <a href="/clea" class="btn btn--bordeaux btn--lg" style="margin-top:26px;">Découvrir CléA <span class="arr">→</span></a>
+      </div>
+      <div class="reveal" data-delay="1">
+        <ul class="ticks">
+          <li><strong>7 domaines</strong> : communication en français, calcul, usage du numérique, travail en équipe, autonomie, apprendre à apprendre, hygiène &amp; sécurité.</li>
+          <li><strong>Éligible CPF</strong>, au même titre que votre bilan.</li>
+          <li>Évaluation initiale, parcours sur-mesure des domaines à renforcer, puis certification.</li>
+          <li>Un <strong>tremplin vers la VAE</strong> : une certification inscrite au Répertoire spécifique, reconnue par les employeurs.</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===================== FAQ ===================== -->
-<section class="section section--paper2" data-screen-label="FAQ">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Questions fréquentes</span>
-      <h2 class="h-section">Vos questions sur le bilan</h2>
+<section class="band" data-screen-label="FAQ">
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">Questions fréquentes</span>
+      <h2 class="mega">Vos questions sur le bilan.</h2>
     </div>
-    <div class="faq reveal" data-delay="1">
+    <div class="faq reveal" data-delay="1" style="margin-top:38px;">
       <details>
         <summary>Le bilan est-il vraiment confidentiel ?</summary>
         <div class="faq__a"><p>Oui, totalement. L'article L.6313-10 du Code du travail garantit la confidentialité : les résultats détaillés et le document de synthèse ne peuvent être communiqués à un tiers qu'avec votre accord explicite. Tout ce qui se dit pendant le bilan reste entre vous et votre consultant.</p></div>
@@ -217,48 +214,25 @@
   </div>
 </section>
 
-<!-- ===================== CLÉA ===================== -->
-<section class="section section--ink" data-screen-label="CléA">
-  <div class="sviz" data-viz="radar"></div>
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:center; gap:clamp(40px,6vw,90px);">
-      <div class="reveal">
-        <span class="eyebrow">Aller plus loin</span>
-        <h2 class="h-section" style="margin-top:18px;">Sécurisez vos bases avec le certificat CléA</h2>
-        <p class="lead" style="margin-top:18px;">CléA certifie officiellement votre socle de connaissances et de compétences professionnelles. C'est le complément idéal d'un bilan : une preuve reconnue de vos acquis, précieuse avant une reconversion ou une VAE.</p>
-        <a href="/contact" class="btn btn--bordeaux" style="margin-top:26px;">Ajouter CléA à mon projet <span class="arr">→</span></a>
-      </div>
-      <div class="reveal" data-delay="1">
-        <ul class="ticks">
-          <li><strong>7 domaines</strong> : communication en français, calcul, usage du numérique, travail en équipe, autonomie, apprendre à apprendre, hygiène &amp; sécurité.</li>
-          <li><strong>Éligible CPF</strong>, au même titre que votre bilan.</li>
-          <li>Évaluation initiale, parcours sur-mesure des domaines à renforcer, puis certification.</li>
-          <li>Une <strong>certification inscrite au Répertoire spécifique</strong>, reconnue par les employeurs.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===================== CTA ===================== -->
-<section class="section cta-band" data-screen-label="CTA">
-  <div class="sviz" data-viz="gauge"></div>
-  <div class="wrap reveal">
-    <span class="eyebrow" style="justify-content:center;">Premier pas</span>
-    <h2 class="h-section">Prêt·e à faire le point ?</h2>
-    <p class="lead">Un échange suffit pour démarrer. Le premier entretien est gratuit, confidentiel et sans engagement — parlons de votre situation et de vos droits.</p>
+<section class="band band--plum" data-screen-label="CTA" style="text-align:center;">
+  <div class="sviz" data-viz="gauge" style="opacity:.4;"></div>
+  <div class="bleed reveal">
+    <span class="kicker">Premier pas</span>
+    <h2 class="mega" style="max-width:22ch; margin:6px auto 0;">Prêt·e à faire le point&nbsp;?</h2>
+    <p class="sub" style="margin:20px auto 30px;">Un échange suffit pour démarrer. Le premier entretien est gratuit, confidentiel et sans engagement — parlons de votre situation et de vos droits.</p>
     <a href="/contact" class="btn btn--bordeaux btn--lg">Demander à être rappelé·e <span class="arr">→</span></a>
   </div>
 </section>
 
 <!-- ===================== FOOTER ===================== -->
-<footer class="site-footer">
+<footer class="site-footer head--wide">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="brand__name" style="font-size:1.5rem;">Objectifs <b style="color:var(--rose);">Carrières</b></span>
-        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan de compétences, VAE et VAE spécialisée, partout en France.</p>
-        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384</p>
+        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan, VAE, VAE spécialisée et CléA, partout en France.</p>
+        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384 · Lyon</p>
       </div>
       <div>
         <h4>Accompagnements</h4>
@@ -266,7 +240,8 @@
           <li><a href="/bilan-de-competences">Bilan de compétences</a></li>
           <li><a href="/vae">VAE — Validation des acquis</a></li>
           <li><a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a></li>
-          <li><a href="/accompagnement">Notre méthode</a></li>
+          <li><a href="/clea">Certification CléA</a></li>
+          <li><a href="/comparatif">Comparatif des dispositifs</a></li>
         </ul>
       </div>
       <div>
