@@ -1014,3 +1014,12 @@ a.bento__tile:hover .go .arr { transform: translateX(4px); }
 /* Pastilles financement sur fond sombre */
 .band--ink .fin-pill, .band--plum .fin-pill { background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.16); color: #fff; }
 .band--ink .fin-pill .tick, .band--plum .fin-pill .tick { background: var(--bordeaux); color: #fff; }
+
+/* — Lisibilité des composants posés directement sur une bande sombre — */
+.band--plum .ticks li, .band--ink .ticks li { color: #E7D7DE; }
+.band--rose .ticks li { color: #fff; }
+.band--plum .ticks li strong, .band--plum .ticks li b,
+.band--ink .ticks li strong, .band--ink .ticks li b,
+.band--rose .ticks li strong, .band--rose .ticks li b { color: #fff; }
+.band--plum .ticks li::before, .band--ink .ticks li::before { background: var(--rose); }
+.band--rose .ticks li::before { background: #fff; }
