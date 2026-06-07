@@ -20,18 +20,23 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
 <link rel="stylesheet" href="styles.css" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Objectifs Carrières","url":"https://www.objectifs-carrieres.fr","logo":"https://www.objectifs-carrieres.fr/logo11.png","image":"https://www.objectifs-carrieres.fr/og-image.png","description":"Organisme spécialisé dans l'accompagnement de carrière du secteur sanitaire et social : bilan de compétences, VAE et VAE spécialisée. Certifié Qualiopi, éligible CPF.","founder":{"@type":"Person","name":"Florence Massol"},"areaServed":"FR","sameAs":["https://www.pappers.fr/entreprise/objectifs-carrieres-918536384"]}</script>
+<style>
+  /* Lisibilité des listes à losanges sur les bandes sombres (plum / rose / ink) */
+  .band--plum .ticks li, .band--rose .ticks li, .band--ink .ticks li { color: rgba(255,255,255,.88); }
+  .band--plum .ticks strong, .band--rose .ticks strong, .band--ink .ticks strong { color: #fff; }
+  .band--plum .ticks li::before, .band--rose .ticks li::before, .band--ink .ticks li::before { background: var(--rose); }
+</style>
 </head>
 <body>
 
-<!-- ===================== HEADER ===================== -->
-<header class="site-header">
+<!-- ===================== HEADER (pleine largeur) ===================== -->
+<header class="site-header head--wide">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Objectifs Carrières, accueil">
       <span class="brand__mark" aria-hidden="true"><img src="/logo-mark.png" alt="" width="51" height="50" /></span>
       <span>
         <span class="brand__name">Objectifs <b>Carrières</b></span>
-        <span class="brand__sub">Bilan · VAE · sanitaire &amp; social</span>
+        <span class="brand__sub">Bilan · VAE · CléA · sanitaire &amp; social</span>
       </span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
@@ -42,7 +47,8 @@
           <a href="/bilan-de-competences">Bilan de compétences</a>
           <a href="/vae">VAE — Validation des acquis</a>
           <a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a>
-          <a href="/accompagnement" class="sub__all">Notre méthode d'accompagnement →</a>
+          <a href="/clea">Certification CléA</a>
+          <a href="/comparatif" class="sub__all">Comparer les 3 dispositifs →</a>
         </div>
       </div>
       <a href="/secteur-sanitaire-social">Sanitaire &amp; social</a>
@@ -62,29 +68,19 @@
   </div>
 </header>
 
-<!-- ===================== HERO ===================== -->
-<section class="hero hero--page" data-screen-label="VAE — Hero">
-  <div class="hero__sky"></div>
-  <div class="hero__scene" id="scene" data-scene="formations"></div>
-  <div class="hero__scrim"></div>
-  <div class="hero__inner wrap">
-    <span class="eyebrow reveal in">VAE · Validation des Acquis de l'Expérience</span>
-    <h1 class="reveal in" data-delay="1">Votre expérience <em>vaut un diplôme.</em></h1>
-    <p class="hero__lead reveal in" data-delay="2">
-      La VAE permet d'obtenir tout ou partie d'un diplôme d'État en faisant valider son expérience
-      devant un jury — sans retourner sur les bancs de l'école. Depuis la réforme 2023, elle est
-      plus ouverte que jamais.
-    </p>
-    <div class="hero__cta reveal in" data-delay="3">
-      <a href="/contact" class="btn btn--lg">Tester mon éligibilité <span class="arr">→</span></a>
-      <a href="/vae-sanitaire-social" class="btn btn--ghost btn--lg">VAE sanitaire &amp; social</a>
-    </div>
-  </div>
-
-  <div class="trust">
-    <div class="wrap">
-      <span class="trust__label">Ce qu'il faut retenir</span>
-      <div class="trust__items">
+<!-- ===================== HERO (pleine largeur) ===================== -->
+<section class="band" data-screen-label="VAE — Hero">
+  <div class="sviz" data-viz="network"></div>
+  <div class="bleed">
+    <div class="band__head reveal in" style="max-width:none;">
+      <span class="kicker">VAE · Validation des Acquis de l'Expérience</span>
+      <h1 class="mega" data-delay="1">Votre expérience <em>vaut un diplôme.</em></h1>
+      <p class="sub" data-delay="2" style="margin-top:24px;">La VAE permet d'obtenir tout ou partie d'un diplôme d'État en faisant valider son expérience devant un jury — sans retourner sur les bancs de l'école. Depuis la réforme 2023, elle est plus ouverte que jamais.</p>
+      <div class="hero__cta reveal in" data-delay="3" style="margin-top:34px;">
+        <a href="/contact" class="btn btn--lg">Tester mon éligibilité <span class="arr">→</span></a>
+        <a href="/vae-sanitaire-social" class="btn btn--ghost btn--lg">VAE sanitaire &amp; social</a>
+      </div>
+      <div class="reveal in" data-delay="3" style="margin-top:38px; display:flex; flex-wrap:wrap; gap:10px 22px; font-size:13.5px; font-weight:700; color:var(--ink);">
         <span class="trust__item"><span class="dot"></span>Diplôme d'État</span>
         <span class="trust__item"><span class="dot"></span>Recevabilité → jury</span>
         <span class="trust__item"><span class="dot"></span>Plus de durée minimum</span>
@@ -95,29 +91,19 @@
 </section>
 
 <!-- ===================== DÉFINITION ===================== -->
-<section class="section" data-screen-label="La VAE, c'est quoi ?">
-  <div class="sviz" data-viz="network"></div>
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:start; gap:clamp(40px,6vw,90px);">
+<section class="band band--cream2" data-screen-label="La VAE, c'est quoi ?">
+  <div class="bleed">
+    <div class="duo">
       <div class="reveal">
-        <span class="eyebrow">La VAE, c'est quoi ?</span>
-        <h2 class="h-section" style="margin-top:18px;">Faire reconnaître ce que vous savez déjà faire</h2>
-        <p class="lead" style="margin-top:20px;">
-          La VAE est un dispositif créé en 2002 (Code du travail, article L.6411-1) qui ouvre à toute
-          personne expérimentée le droit d'obtenir un diplôme reconnu par l'État, sans repasser par
-          la formation initiale.
-        </p>
-        <p style="color:var(--ink-2);">
-          La réforme de 2023 l'a profondément simplifiée : suppression de la durée minimale d'expérience,
-          création de l'<strong>Architecte Accompagnateur de Parcours</strong> pour vous guider, et mise
-          en place du service public <strong>France VAE</strong>, tout particulièrement déployé pour les
-          diplômes du sanitaire et social.
-        </p>
-        <div class="notice">« Il n'y a plus de durée minimum d'expérience : c'est la pertinence de votre expérience au regard du référentiel qui compte. »</div>
+        <span class="kicker">La VAE, c'est quoi&nbsp;?</span>
+        <h2 class="mega" style="margin-top:12px;">Faire reconnaître ce que vous savez <em>déjà faire.</em></h2>
+        <p class="sub" style="margin-top:20px;">La VAE est un dispositif créé en 2002 (Code du travail, article L.6411-1) qui ouvre à toute personne expérimentée le droit d'obtenir un diplôme reconnu par l'État, sans repasser par la formation initiale.</p>
+        <p style="color:var(--ink-2); margin-top:16px; max-width:60ch;">La réforme de 2023 l'a profondément simplifiée : suppression de la durée minimale d'expérience, création de l'<strong>Architecte Accompagnateur de Parcours</strong> pour vous guider, et mise en place du service public <strong>France VAE</strong>, tout particulièrement déployé pour les diplômes du sanitaire et social.</p>
+        <p class="mega" style="font-size:clamp(1.3rem,2.1vw,1.8rem); margin-top:26px; line-height:1.2;">Plus de durée minimum : <em>c'est la pertinence de l'expérience qui compte.</em></p>
       </div>
       <div class="reveal" data-delay="1">
-        <p style="font-size:13px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--bordeaux); margin-bottom:16px;">Qui peut en bénéficier ?</p>
-        <ul class="ticks">
+        <span class="kicker" style="color:var(--bordeaux);">Qui peut en bénéficier&nbsp;?</span>
+        <ul class="ticks" style="margin-top:18px;">
           <li><strong>Salarié·e</strong> du privé comme du public (CDI, CDD, intérim)</li>
           <li><strong>Demandeur·se d'emploi</strong>, indemnisé·e ou non</li>
           <li><strong>Travailleur·se indépendant·e</strong> ou non salarié·e</li>
@@ -130,32 +116,55 @@
   </div>
 </section>
 
-<!-- ===================== LES ÉTAPES ===================== -->
-<section class="section section--paper2" data-screen-label="Le parcours">
+<!-- ===================== LE PARCOURS (frise) ===================== -->
+<section class="band" data-screen-label="Le parcours">
   <div class="sviz" data-viz="process"></div>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Le parcours</span>
-      <h2 class="h-section">De la recevabilité au jury, à vos côtés</h2>
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">Le parcours</span>
+      <h2 class="mega">De la recevabilité au jury, à vos côtés.</h2>
+      <p class="sub">Cinq étapes claires, un référent unique du premier appel jusqu'au résultat.</p>
     </div>
-    <div class="steps reveal" data-delay="1" style="margin-top:40px; max-width:900px;">
-      <div class="step"><div class="step__no">1</div><div><h3>Étude &amp; faisabilité</h3><p>Un entretien gratuit pour choisir le diplôme visé, vérifier vos droits et confirmer que votre expérience colle au référentiel.</p></div></div>
-      <div class="step"><div class="step__no">2</div><div><h3>Livret 1 — Recevabilité</h3><p>On constitue le dossier qui prouve le lien entre votre expérience et le diplôme. Réponse de l'autorité certificatrice sous 2 mois.</p></div></div>
-      <div class="step"><div class="step__no">3</div><div><h3>Livret 2 — Validation</h3><p>La pièce maîtresse : décrire et analyser 2 à 3 situations professionnelles pour démontrer la maîtrise de chaque bloc de compétences. <strong>C'est l'étape où l'accompagnement multiplie par 2 à 3 le taux de réussite.</strong></p></div></div>
-      <div class="step"><div class="step__no">4</div><div><h3>Préparation au jury</h3><p>Entretiens blancs face à un jury simulé et analyse de la pratique : vous arrivez préparé·e, ancré·e dans vos exemples et confiant·e.</p></div></div>
-      <div class="step"><div class="step__no">5</div><div><h3>Jury &amp; suites</h3><p>Validation totale, partielle (vous disposez alors de 5 ans pour compléter), ou nouvelle étape : votre projet ne s'arrête pas au jury.</p></div></div>
+    <div class="frise reveal" data-delay="1" style="margin-top:46px;">
+      <div class="frise__step">
+        <span class="frise__dot">1</span>
+        <h4>Étude &amp; faisabilité</h4>
+        <p>Un entretien gratuit pour choisir le diplôme visé, vérifier vos droits et confirmer que votre expérience colle au référentiel.</p>
+      </div>
+      <div class="frise__step">
+        <span class="frise__dot">2</span>
+        <h4>Livret 1 — Recevabilité</h4>
+        <p>On constitue le dossier qui prouve le lien entre votre expérience et le diplôme. Réponse de l'autorité certificatrice sous 2 mois.</p>
+      </div>
+      <div class="frise__step">
+        <span class="frise__dot">3</span>
+        <h4>Livret 2 — Validation</h4>
+        <p>La pièce maîtresse : décrire et analyser 2 à 3 situations professionnelles pour démontrer la maîtrise de chaque bloc de compétences. <strong>C'est l'étape où l'accompagnement multiplie par 2 à 3 le taux de réussite.</strong></p>
+      </div>
+      <div class="frise__step">
+        <span class="frise__dot">4</span>
+        <h4>Préparation au jury</h4>
+        <p>Entretiens blancs face à un jury simulé et analyse de la pratique : vous arrivez préparé·e, ancré·e dans vos exemples et confiant·e.</p>
+      </div>
+      <div class="frise__step">
+        <span class="frise__dot">5</span>
+        <h4>Jury &amp; suites</h4>
+        <p>Validation totale, partielle (vous disposez alors de 5 ans pour compléter), ou nouvelle étape : votre projet ne s'arrête pas au jury.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===================== FINANCEMENT ===================== -->
-<section class="section" data-screen-label="Financement">
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:start; gap:clamp(40px,6vw,90px);">
-      <div class="prose reveal">
-        <h2>Une VAE finançable</h2>
-        <p>Dans la quasi-totalité des cas, votre parcours est pris en charge. On vérifie vos droits avec vous, gratuitement, avant de vous lancer.</p>
-        <ul>
+<section class="band band--plum" data-screen-label="Financement">
+  <div class="sviz" data-viz="funnel" style="opacity:.4;"></div>
+  <div class="bleed">
+    <div class="duo">
+      <div class="reveal">
+        <span class="kicker">Financement</span>
+        <h2 class="mega" style="margin-top:12px;">Une VAE <em>finançable.</em></h2>
+        <p class="sub" style="margin-top:18px; color:rgba(255,255,255,.92);">Dans la quasi-totalité des cas, votre parcours est pris en charge. On vérifie vos droits avec vous, gratuitement, avant de vous lancer.</p>
+        <ul class="ticks" style="margin-top:22px;">
           <li><strong>CPF / Mon Compte Formation</strong> — mobilisable en ligne ; une participation forfaitaire peut s'appliquer, mais la VAE reste <strong>gratuite pour les demandeurs d'emploi</strong>.</li>
           <li><strong>Transitions Pro (PTP)</strong> — pour les salarié·es en projet de reconversion.</li>
           <li><strong>France Travail (AIF)</strong> — aide individuelle à la formation pour les demandeurs d'emploi.</li>
@@ -163,91 +172,97 @@
           <li><strong>ANFH</strong> — pour les agents de la fonction publique hospitalière.</li>
           <li><strong>Autofinancement</strong> — possible, mais à éviter : dans la plupart des situations, un dispositif couvre vos frais.</li>
         </ul>
+        <a href="/financement" class="btn btn--lg" style="background:#fff; color:var(--bordeaux); border-color:#fff; margin-top:26px;">Vérifier mes droits <span class="arr">→</span></a>
       </div>
-      <aside class="aside-card reveal" data-delay="1">
-        <span class="eyebrow">Spécialité</span>
-        <h3 style="margin-top:12px;">Diplômes sanitaire &amp; social</h3>
-        <p style="color:var(--ink-2); margin-top:12px;">DEAS, DEAP, DEAES, DEME, DEES, DEEJE… Les diplômes d'État du soin et de l'accompagnement sont notre cœur de métier — accompagnés par des experts qui en connaissent les référentiels par cœur.</p>
-        <a href="/vae-sanitaire-social" class="card__link" style="margin-top:16px;">Découvrir la VAE spécialisée <span class="arr">→</span></a>
-      </aside>
+      <div class="reveal" data-delay="1">
+        <div class="fin-pills">
+          <span class="fin-pill"><span class="tick">✓</span> CPF / Mon Compte Formation</span>
+          <span class="fin-pill"><span class="tick">✓</span> Transitions Pro</span>
+          <span class="fin-pill"><span class="tick">✓</span> France Travail (AIF)</span>
+          <span class="fin-pill"><span class="tick">✓</span> OPCO Santé</span>
+          <span class="fin-pill"><span class="tick">✓</span> ANFH</span>
+          <span class="fin-pill"><span class="tick">✓</span> France VAE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPÉCIALITÉ (sanitaire & social) ===================== -->
+<section class="band band--rose" data-screen-label="Spécialité">
+  <div class="bleed">
+    <div class="duo">
+      <div class="reveal">
+        <span class="kicker">Notre spécialité</span>
+        <h2 class="mega" style="margin-top:12px;">Les diplômes du soin, <em>c'est notre métier.</em></h2>
+        <p class="sub" style="margin-top:18px; color:rgba(255,255,255,.92);">DEAS, DEAP, DEAES, DEME, DEES, DEEJE… Les diplômes d'État du soin et de l'accompagnement sont notre cœur de métier — accompagnés par des experts qui en connaissent les référentiels par cœur.</p>
+        <a href="/vae-sanitaire-social" class="btn btn--lg" style="background:#fff; color:var(--bordeaux); border-color:#fff; margin-top:26px;">Découvrir la VAE spécialisée <span class="arr">→</span></a>
+      </div>
+      <div class="reveal" data-delay="1">
+        <div class="dipl">
+          <div class="dipl__item"><div class="dipl__abbr">DEAS</div><h3>Aide-soignant·e</h3><p>Soins, hygiène et accompagnement — le diplôme phare des EHPAD et hôpitaux.</p></div>
+          <div class="dipl__item"><div class="dipl__abbr">DEAP</div><h3>Auxiliaire de puériculture</h3><p>Soin et éveil du jeune enfant, en crèche ou en maternité.</p></div>
+          <div class="dipl__item"><div class="dipl__abbr">DEAES</div><h3>Accompagnant éducatif &amp; social</h3><p>Accompagner l'autonomie au quotidien, handicap ou grand âge.</p></div>
+          <div class="dipl__item"><div class="dipl__abbr">DEME</div><h3>Moniteur-éducateur</h3><p>Soutien éducatif en IME, foyer ou ESAT.</p></div>
+          <div class="dipl__item"><div class="dipl__abbr">DEES</div><h3>Éducateur spécialisé</h3><p>Accompagnement éducatif de l'enfance à l'âge adulte.</p></div>
+          <div class="dipl__item"><div class="dipl__abbr">DEEJE</div><h3>Éducateur de jeunes enfants</h3><p>Éveil et socialisation des tout-petits.</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===================== FAQ ===================== -->
-<section class="section section--paper2" data-screen-label="FAQ">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Questions fréquentes</span>
-      <h2 class="h-section">Tout ce que vous vous demandez sur la VAE</h2>
+<section class="band band--cream2" data-screen-label="FAQ">
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">Questions fréquentes</span>
+      <h2 class="mega">Tout ce que vous vous demandez sur la VAE.</h2>
     </div>
-    <div class="faq reveal" data-delay="1">
+    <div class="faq reveal" data-delay="1" style="margin-top:38px;">
       <details>
-        <summary>Combien de temps dure une VAE ?</summary>
+        <summary>Combien de temps dure une VAE&nbsp;?</summary>
         <div class="faq__a"><p>Comptez en général 4 à 6 mois lorsque vous êtes accompagné·e, et plutôt 8 à 14 mois en autonomie. La durée dépend surtout du temps que vous consacrez au livret 2 — c'est précisément là que l'accompagnement fait gagner des mois.</p></div>
       </details>
       <details>
-        <summary>Faut-il un diplôme pour faire une VAE ?</summary>
+        <summary>Faut-il un diplôme pour faire une VAE&nbsp;?</summary>
         <div class="faq__a"><p>Non. Aucun diplôme ni niveau d'études n'est requis pour entamer une VAE. C'est votre expérience, et non votre parcours scolaire, qui est évaluée au regard du référentiel du diplôme visé.</p></div>
       </details>
       <details>
-        <summary>Puis-je échouer ?</summary>
+        <summary>Puis-je échouer&nbsp;?</summary>
         <div class="faq__a"><p>L'« échec » total est rare, surtout avec un accompagnement. Le jury peut prononcer une <strong>validation partielle</strong> : vous obtenez les blocs de compétences acquis et disposez de 5 ans pour compléter les autres. Notre préparation vise justement la validation totale dès le premier passage.</p></div>
       </details>
       <details>
-        <summary>La VAE est-elle gratuite ?</summary>
+        <summary>La VAE est-elle gratuite&nbsp;?</summary>
         <div class="faq__a"><p>Elle est finançable : votre CPF, Transitions Pro, France Travail, l'OPCO Santé ou l'ANFH peuvent couvrir tout ou partie des frais. Pour les demandeurs d'emploi, elle est généralement gratuite. Nous étudions vos droits avec vous avant tout engagement.</p></div>
       </details>
       <details>
-        <summary>Quels diplômes du soin sont accessibles ?</summary>
+        <summary>Quels diplômes du soin sont accessibles&nbsp;?</summary>
         <div class="faq__a"><p>De nombreux diplômes d'État du sanitaire et social s'obtiennent par VAE : DEAS, DEAP, DEAES, DEME, DEES, DEEJE et bien d'autres. C'est notre spécialité — <a href="/vae-sanitaire-social">découvrez la VAE sanitaire &amp; social</a>.</p></div>
       </details>
     </div>
   </div>
 </section>
 
-<!-- ===================== CLÉA ===================== -->
-<section class="section section--ink" data-screen-label="CléA">
-  <div class="sviz" data-viz="radar"></div>
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:center; gap:clamp(40px,6vw,90px);">
-      <div class="reveal">
-        <span class="eyebrow">Une autre voie</span>
-        <h2 class="h-section" style="margin-top:18px;">Pas encore prêt·e pour la VAE ? Pensez à CléA</h2>
-        <p class="lead" style="margin-top:18px;">CléA certifie le socle commun de connaissances et de compétences professionnelles. C'est une première marche idéale : une certification reconnue, accessible sans diplôme, qui consolide vos bases avant de viser un diplôme d'État par la VAE.</p>
-        <a href="/contact" class="btn btn--bordeaux" style="margin-top:26px;">Découvrir CléA <span class="arr">→</span></a>
-      </div>
-      <div class="reveal" data-delay="1">
-        <ul class="ticks">
-          <li><strong>7 domaines</strong> : communication en français, calcul, usage du numérique, travail en équipe, autonomie, apprendre à apprendre, hygiène &amp; sécurité.</li>
-          <li><strong>Éligible CPF</strong> et finançable.</li>
-          <li>Idéale pour les personnes <strong>sans diplôme</strong> ou éloignées de la formation.</li>
-          <li>Un tremplin reconnu <strong>vers une VAE</strong> ou une formation qualifiante.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===================== CTA ===================== -->
-<section class="section cta-band" data-screen-label="CTA">
-  <div class="sviz" data-viz="gauge"></div>
-  <div class="wrap reveal">
-    <span class="eyebrow" style="justify-content:center;">Premier pas</span>
-    <h2 class="h-section">Et si votre expérience devenait un diplôme ?</h2>
-    <p class="lead">Parlons de votre projet. Le premier entretien est gratuit, confidentiel et sans engagement.</p>
+<section class="band band--plum" data-screen-label="CTA" style="text-align:center;">
+  <div class="sviz" data-viz="gauge" style="opacity:.4;"></div>
+  <div class="bleed reveal">
+    <span class="kicker">Premier pas</span>
+    <h2 class="mega" style="max-width:22ch; margin:6px auto 0;">Et si votre expérience devenait un diplôme&nbsp;?</h2>
+    <p class="sub" style="margin:20px auto 30px;">Parlons de votre projet. Le premier entretien est gratuit, confidentiel et sans engagement.</p>
     <a href="/contact" class="btn btn--bordeaux btn--lg">Tester mon éligibilité <span class="arr">→</span></a>
   </div>
 </section>
 
 <!-- ===================== FOOTER ===================== -->
-<footer class="site-footer">
+<footer class="site-footer head--wide">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="brand__name" style="font-size:1.5rem;">Objectifs <b style="color:var(--rose);">Carrières</b></span>
-        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan de compétences, VAE et VAE spécialisée, partout en France.</p>
-        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384</p>
+        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan, VAE, VAE spécialisée et CléA, partout en France.</p>
+        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384 · Lyon</p>
       </div>
       <div>
         <h4>Accompagnements</h4>
@@ -255,7 +270,8 @@
           <li><a href="/bilan-de-competences">Bilan de compétences</a></li>
           <li><a href="/vae">VAE — Validation des acquis</a></li>
           <li><a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a></li>
-          <li><a href="/accompagnement">Notre méthode</a></li>
+          <li><a href="/clea">Certification CléA</a></li>
+          <li><a href="/comparatif">Comparatif des dispositifs</a></li>
         </ul>
       </div>
       <div>
