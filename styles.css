@@ -859,7 +859,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .frise__step { text-align: center; position: relative; padding: 0 6px; }
 .frise__dot { width: 40px; height: 40px; border-radius: 50%; background: var(--white); border: 2px solid var(--bordeaux); color: var(--bordeaux); font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; display: grid; place-items: center; margin: 0 auto 16px; position: relative; z-index: 1; box-shadow: 0 0 0 7px var(--paper); }
 .section--paper2 .frise__dot { box-shadow: 0 0 0 7px var(--paper-2); }
-.frise__step h4 { font-size: 1.05rem; font-family: var(--font-sans); font-weight: 700; margin: 0 0 5px; }
+.frise__step h3, .frise__step h4 { font-size: 1.05rem; font-family: var(--font-sans); font-weight: 700; margin: 0 0 5px; color: var(--ink); line-height: 1.2; }
 .frise__step p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.45; }
 @media (prefers-reduced-motion: no-preference) { .frise::before { animation: flowRight 1.2s linear infinite; } }
 @media (max-width: 760px) {
