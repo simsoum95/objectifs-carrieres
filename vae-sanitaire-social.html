@@ -23,13 +23,14 @@
 </head>
 <body>
 
-<header class="site-header">
+<!-- ===================== HEADER (pleine largeur) ===================== -->
+<header class="site-header head--wide">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Objectifs Carrières, accueil">
       <span class="brand__mark" aria-hidden="true"><img src="/logo-mark.png" alt="" width="51" height="50" /></span>
       <span>
         <span class="brand__name">Objectifs <b>Carrières</b></span>
-        <span class="brand__sub">Bilan · VAE · sanitaire &amp; social</span>
+        <span class="brand__sub">Bilan · VAE · CléA · sanitaire &amp; social</span>
       </span>
     </a>
     <nav class="nav" aria-label="Navigation principale">
@@ -40,7 +41,8 @@
           <a href="/bilan-de-competences">Bilan de compétences</a>
           <a href="/vae">VAE — Validation des acquis</a>
           <a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a>
-          <a href="/accompagnement" class="sub__all">Notre méthode d'accompagnement →</a>
+          <a href="/clea">Certification CléA</a>
+          <a href="/comparatif" class="sub__all">Comparer les 3 dispositifs →</a>
         </div>
       </div>
       <a href="/secteur-sanitaire-social">Sanitaire &amp; social</a>
@@ -60,36 +62,39 @@
   </div>
 </header>
 
-<!-- ===================== HERO ===================== -->
-<section class="hero hero--page" data-screen-label="VAE sanitaire & social">
-  <div class="hero__sky"></div>
-  <div class="hero__scene" id="scene" data-scene="formations"></div>
-  <div class="hero__scrim"></div>
-  <div class="wrap">
-    <div class="hero__inner">
-      <span class="eyebrow reveal in">VAE spécialisée · sanitaire &amp; social</span>
-      <h1 class="reveal in" data-delay="1">Votre expérience du soin,<br /><em>validée en diplôme d'État.</em></h1>
-      <p class="hero__lead reveal in" data-delay="2">DEAS, DEAP, DEAES, DEME, DEES, DEEJE… C'est notre cœur de métier. Nous connaissons chaque référentiel et chaque jury du secteur — et nous mettons cette expertise au service de votre réussite.</p>
-      <div class="hero__cta reveal in" data-delay="3">
-        <a href="/contact" class="btn btn--lg">Vérifier mon éligibilité <span class="arr">→</span></a>
-        <a href="/vae" class="btn btn--ghost btn--lg">Comprendre la VAE</a>
-      </div>
+<!-- ===================== HERO (pleine largeur) ===================== -->
+<section class="band" data-screen-label="Hero">
+  <div class="sviz" data-viz="network"></div>
+  <div class="bleed">
+    <div class="band__head reveal in" style="max-width:30ch;">
+      <span class="kicker">VAE spécialisée · sanitaire &amp; social</span>
+      <h1 class="mega" data-delay="1">Votre expérience du soin, <em>validée en diplôme d'État.</em></h1>
+    </div>
+    <p class="sub reveal in" data-delay="2" style="margin-top:22px;">DEAS, DEAP, DEAES, DEME, DEES, DEEJE… C'est notre cœur de métier. Nous connaissons chaque référentiel et chaque jury du secteur — et nous mettons cette expertise au service de votre réussite.</p>
+    <div class="hero__cta reveal in" data-delay="3" style="margin-top:32px;">
+      <a href="/contact" class="btn btn--lg">Vérifier mon éligibilité <span class="arr">→</span></a>
+      <a href="/vae" class="btn btn--ghost btn--lg">Comprendre la VAE</a>
+    </div>
+    <div class="reveal in" data-delay="3" style="margin-top:36px; display:flex; flex-wrap:wrap; gap:10px 22px; font-size:13.5px; font-weight:700; color:var(--ink);">
+      <span class="trust__item"><span class="dot"></span>Certifié Qualiopi</span>
+      <span class="trust__item"><span class="dot"></span>Mon Compte Formation</span>
+      <span class="trust__item"><span class="dot"></span>Éligible CPF</span>
     </div>
   </div>
 </section>
 
-<!-- ===================== POURQUOI SPÉCIALISÉE ===================== -->
-<section class="section" data-screen-label="Pourquoi spécialisée">
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:center; gap:clamp(40px,6vw,90px);">
+<!-- ===================== POURQUOI UN SPÉCIALISTE ===================== -->
+<section class="band band--cream2" data-screen-label="Pourquoi spécialisée">
+  <div class="bleed">
+    <div class="duo" style="align-items:center;">
       <div class="reveal">
-        <span class="eyebrow">Pourquoi un spécialiste ?</span>
-        <p class="h-section" style="margin-top:18px;">Un jury de DEAS ne s'aborde pas comme un jury de DEES.</p>
-        <div class="sviz sviz--wide" data-viz="pulse"></div>
+        <span class="kicker">Pourquoi un spécialiste&nbsp;?</span>
+        <h2 class="mega" style="margin-top:12px;">Un jury de DEAS ne s'aborde pas <em>comme un jury de DEES.</em></h2>
+        <div class="sviz" data-viz="pulse" style="position:relative; height:120px; margin-top:8px;"></div>
       </div>
       <div class="reveal" data-delay="1">
-        <p class="lead">Chaque diplôme du sanitaire et social a son référentiel, son vocabulaire, ses attendus. Un accompagnement générique passe à côté de ces subtilités — pas nous.</p>
-        <p style="color:var(--ink-2);">Nous savons quelles situations professionnelles valorisent tel bloc de compétences, comment formuler une analyse réflexive qui parle au jury, et comment combler un écart sans tout réécrire. Cette précision, c'est ce qui transforme une validation partielle en validation totale.</p>
+        <p class="sub">Chaque diplôme du sanitaire et social a son référentiel, son vocabulaire, ses attendus. Un accompagnement générique passe à côté de ces subtilités — pas nous.</p>
+        <p style="color:var(--ink-2); margin-top:14px;">Nous savons quelles situations professionnelles valorisent tel bloc de compétences, comment formuler une analyse réflexive qui parle au jury, et comment combler un écart sans tout réécrire. Cette précision, c'est ce qui transforme une validation partielle en validation totale.</p>
         <ul class="ticks" style="margin-top:22px;">
           <li>Maîtrise des <strong>référentiels de chaque diplôme d'État</strong>.</li>
           <li>Connaissance des <strong>jurys</strong> et de leurs attendus.</li>
@@ -100,99 +105,118 @@
   </div>
 </section>
 
-<!-- ===================== DIPLÔMES ===================== -->
-<section class="section section--paper2" data-screen-label="Diplômes">
-  <div class="sviz" data-viz="network"></div>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Diplômes accessibles</span>
-      <h2 class="h-section">Les diplômes d'État que nous accompagnons</h2>
-      <p class="lead">Du soin à l'accompagnement éducatif et social : si votre métier en fait partie, votre expérience peut devenir un diplôme.</p>
+<!-- ===================== DIPLÔMES (scroll horizontal) ===================== -->
+<section class="band" data-screen-label="Diplômes">
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">Diplômes accessibles</span>
+      <h2 class="mega">Les diplômes d'État que nous accompagnons</h2>
+      <p class="sub">Du soin à l'accompagnement éducatif et social : si votre métier en fait partie, votre expérience peut devenir un diplôme. Faites défiler.</p>
     </div>
-    <div class="dipl reveal" data-delay="1" style="margin-top:48px;">
-      <article class="dipl__item"><div class="dipl__abbr">DEAS</div><h3>Aide-soignant·e</h3><p>Soins, hygiène, accompagnement des personnes — le diplôme phare des EHPAD et hôpitaux.</p></article>
-      <article class="dipl__item"><div class="dipl__abbr">DEAP</div><h3>Auxiliaire de puériculture</h3><p>Soin et éveil du jeune enfant, en crèche, maternité ou service de pédiatrie.</p></article>
-      <article class="dipl__item"><div class="dipl__abbr">DEAES</div><h3>Accompagnant éducatif &amp; social</h3><p>Accompagnement au quotidien des personnes en situation de handicap ou de dépendance.</p></article>
-      <article class="dipl__item"><div class="dipl__abbr">DEME</div><h3>Moniteur-éducateur</h3><p>Animation et soutien éducatif auprès de publics fragilisés, en institution.</p></article>
-      <article class="dipl__item"><div class="dipl__abbr">DEES</div><h3>Éducateur spécialisé</h3><p>Accompagnement éducatif et social de personnes en difficulté, de l'enfance à l'âge adulte.</p></article>
-      <article class="dipl__item"><div class="dipl__abbr">DEEJE</div><h3>Éducateur de jeunes enfants</h3><p>Éveil, développement et socialisation des tout-petits, en structure d'accueil.</p></article>
-      <article class="dipl__item"><div class="dipl__abbr">DEASS</div><h3>Assistant de service social</h3><p>Accompagnement social, accès aux droits et soutien des personnes et des familles.</p></article>
-      <article class="dipl__item"><div class="dipl__abbr">DECESF</div><h3>Conseiller en ESF</h3><p>Conseil en économie sociale et familiale : budget, logement, vie quotidienne.</p></article>
-      <article class="dipl__item"><div class="dipl__abbr">DETISF</div><h3>TISF</h3><p>Technicien de l'intervention sociale et familiale : soutien à domicile des familles.</p></article>
+  </div>
+  <div class="bleed" style="margin-top:36px; padding-right:0;">
+    <div class="hscroll reveal" data-delay="1">
+      <div class="hcard"><div class="dipl__abbr">DEAS</div><h3>Aide-soignant·e</h3><p>Soins, hygiène, accompagnement des personnes — le diplôme phare des EHPAD et hôpitaux.</p></div>
+      <div class="hcard"><div class="dipl__abbr">DEAP</div><h3>Auxiliaire de puériculture</h3><p>Soin et éveil du jeune enfant, en crèche, maternité ou service de pédiatrie.</p></div>
+      <div class="hcard"><div class="dipl__abbr">DEAES</div><h3>Accompagnant éducatif &amp; social</h3><p>Accompagnement au quotidien des personnes en situation de handicap ou de dépendance.</p></div>
+      <div class="hcard"><div class="dipl__abbr">DEME</div><h3>Moniteur-éducateur</h3><p>Animation et soutien éducatif auprès de publics fragilisés, en institution.</p></div>
+      <div class="hcard"><div class="dipl__abbr">DEES</div><h3>Éducateur spécialisé</h3><p>Accompagnement éducatif et social de personnes en difficulté, de l'enfance à l'âge adulte.</p></div>
+      <div class="hcard"><div class="dipl__abbr">DEEJE</div><h3>Éducateur de jeunes enfants</h3><p>Éveil, développement et socialisation des tout-petits, en structure d'accueil.</p></div>
+      <div class="hcard"><div class="dipl__abbr">DEASS</div><h3>Assistant de service social</h3><p>Accompagnement social, accès aux droits et soutien des personnes et des familles.</p></div>
+      <div class="hcard"><div class="dipl__abbr">DECESF</div><h3>Conseiller en ESF</h3><p>Conseil en économie sociale et familiale : budget, logement, vie quotidienne.</p></div>
+      <div class="hcard"><div class="dipl__abbr">DETISF</div><h3>TISF</h3><p>Technicien de l'intervention sociale et familiale : soutien à domicile des familles.</p></div>
+      <a class="hcard" href="/secteur-sanitaire-social" style="display:flex; flex-direction:column; justify-content:center; align-items:flex-start; text-decoration:none;"><div class="dipl__abbr">+</div><h3>Voir notre spécialité</h3><p style="color:var(--bordeaux); font-weight:700;">Tout le secteur →</p></a>
     </div>
-    <p class="reveal" data-delay="2" style="margin-top:26px; color:var(--muted); font-size:14.5px;">Votre diplôme n'est pas dans la liste ? D'autres certifications du secteur sont accessibles — <a href="/contact" style="color:var(--bordeaux); text-decoration:underline;">parlons-en</a>.</p>
+  </div>
+  <div class="bleed" style="margin-top:24px;">
+    <p class="reveal" data-delay="2" style="color:var(--muted); font-size:14.5px;">Votre diplôme n'est pas dans la liste&nbsp;? D'autres certifications du secteur sont accessibles — <a href="/contact" style="color:var(--bordeaux); text-decoration:underline;">parlons-en</a>.</p>
   </div>
 </section>
 
-<!-- ===================== FRANCE VAE ===================== -->
-<section class="section" data-screen-label="France VAE">
-  <div class="wrap">
-    <div class="grid grid--2" style="align-items:start; gap:clamp(36px,5vw,72px);">
-      <div class="reveal prose">
-        <span class="eyebrow">Le service public</span>
-        <h2 class="h-section" style="margin:18px 0 18px;">France VAE, et nous à vos côtés</h2>
-        <p>Depuis la réforme de 2023, le secteur sanitaire et social bénéficie d'un service public dédié, <strong>France VAE</strong> (vae.gouv.fr), qui simplifie le parcours et le pilote de bout en bout. La plupart des diplômes du soin y sont disponibles.</p>
-        <p>Mais une plateforme ne rédige pas votre livret à votre place et ne vous prépare pas au jury. C'est là que nous intervenons : nous vous accompagnons <strong>sur</strong> et <strong>autour</strong> de France VAE, pour transformer la démarche administrative en réussite concrète.</p>
+<!-- ===================== FRANCE VAE (bande pleine couleur) ===================== -->
+<section class="band band--plum" data-screen-label="France VAE">
+  <div class="bleed">
+    <div class="duo" style="align-items:start;">
+      <div class="reveal">
+        <span class="kicker">Le service public</span>
+        <h2 class="mega" style="margin-top:12px;">France VAE, <em>et nous à vos côtés.</em></h2>
+        <p class="sub" style="margin-top:18px; color:rgba(255,255,255,.92);">Depuis la réforme de 2023, le secteur sanitaire et social bénéficie d'un service public dédié, <strong>France VAE</strong> (vae.gouv.fr), qui simplifie le parcours et le pilote de bout en bout. La plupart des diplômes du soin y sont disponibles.</p>
+        <p style="margin-top:14px; color:rgba(255,255,255,.82);">Mais une plateforme ne rédige pas votre livret à votre place et ne vous prépare pas au jury. C'est là que nous intervenons : nous vous accompagnons <strong>sur</strong> et <strong>autour</strong> de France VAE, pour transformer la démarche administrative en réussite concrète.</p>
       </div>
       <div class="reveal" data-delay="1">
-        <div class="aside-card">
-          <span class="eyebrow">Architecte Accompagnateur de Parcours</span>
-          <h3 style="margin-top:12px;">Un AAP expert du secteur</h3>
-          <div class="rule" data-w="56px" style="margin:14px 0;"></div>
-          <p style="color:var(--ink-2); font-size:15.5px;">La réforme a créé un rôle clé : l'Architecte Accompagnateur de Parcours. Nos accompagnateurs, spécialistes du sanitaire et social, jouent ce rôle — étude de faisabilité, rédaction, préparation au jury.</p>
-          <p style="margin-top:14px;"><a href="/contact" class="card__link">Être accompagné·e <span class="arr">→</span></a></p>
-        </div>
+        <span class="kicker">Architecte Accompagnateur de Parcours</span>
+        <h3 style="margin-top:12px; font-family:var(--font-display); font-style:italic; font-weight:500; font-size:clamp(1.5rem,2.4vw,2.1rem); line-height:1.2;">Un AAP expert du secteur</h3>
+        <p style="margin-top:14px; color:rgba(255,255,255,.85);">La réforme a créé un rôle clé : l'Architecte Accompagnateur de Parcours. Nos accompagnateurs, spécialistes du sanitaire et social, jouent ce rôle — étude de faisabilité, rédaction, préparation au jury.</p>
+        <ul class="ticks" style="margin-top:20px;">
+          <li>Service public <strong>France VAE</strong> depuis la réforme 2023.</li>
+          <li>La plupart des <strong>diplômes du soin</strong> disponibles.</li>
+          <li>Un accompagnement <strong>sur le fond</strong>, pas seulement la procédure.</li>
+        </ul>
+        <a href="/contact" class="btn btn--lg" style="background:#fff; color:var(--bordeaux); border-color:#fff; margin-top:24px;">Être accompagné·e <span class="arr">→</span></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== DÉROULÉ ===================== -->
-<section class="section section--ink" data-screen-label="Déroulé">
-  <div class="sviz" data-viz="process"></div>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Le parcours</span>
-      <h2 class="h-section">De votre première question au diplôme</h2>
+<!-- ===================== LE PARCOURS (frise) ===================== -->
+<section class="band band--cream2" data-screen-label="Le parcours">
+  <div class="sviz" data-viz="process" style="opacity:.5;"></div>
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">Le parcours</span>
+      <h2 class="mega">De votre première question au diplôme</h2>
+      <p class="sub">Cinq étapes, un référent unique du début à la fin.</p>
     </div>
-    <div class="steps reveal" data-delay="1" style="margin-top:40px; max-width:900px;">
-      <div class="step" style="border-color:rgba(255,255,255,.14);"><div class="step__no">1</div><div><h3 style="color:var(--paper);">Étude de faisabilité</h3><p style="color:#D8C5CE;">On vérifie que votre expérience correspond au diplôme visé et qu'aucune voie plus rapide n'existe.</p></div></div>
-      <div class="step" style="border-color:rgba(255,255,255,.14);"><div class="step__no">2</div><div><h3 style="color:var(--paper);">Recevabilité</h3><p style="color:#D8C5CE;">Constitution du dossier de recevabilité, avec les justificatifs adaptés à votre métier.</p></div></div>
-      <div class="step" style="border-color:rgba(255,255,255,.14);"><div class="step__no">3</div><div><h3 style="color:var(--paper);">Rédaction du livret</h3><p style="color:#D8C5CE;">On décortique vos situations professionnelles et on les met en mots, bloc de compétences par bloc.</p></div></div>
-      <div class="step" style="border-color:rgba(255,255,255,.14);"><div class="step__no">4</div><div><h3 style="color:var(--paper);">Préparation au jury</h3><p style="color:#D8C5CE;">Entretiens blancs face à un jury simulé : vous arrivez préparé·e, sans surprise le jour J.</p></div></div>
-      <div class="step" style="border-bottom-color:rgba(255,255,255,.14); border-top-color:rgba(255,255,255,.14);"><div class="step__no">5</div><div><h3 style="color:var(--paper);">Jury &amp; suites</h3><p style="color:#D8C5CE;">Validation totale, partielle (5 ans pour compléter) ou nouvelle étape : on reste à vos côtés.</p></div></div>
+    <div class="frise reveal" data-delay="1" style="margin-top:44px;">
+      <div class="frise__step"><div class="frise__dot">1</div><h3>Étude de faisabilité</h3><p>On vérifie que votre expérience correspond au diplôme visé et qu'aucune voie plus rapide n'existe.</p></div>
+      <div class="frise__step"><div class="frise__dot">2</div><h3>Recevabilité</h3><p>Constitution du dossier de recevabilité, avec les justificatifs adaptés à votre métier.</p></div>
+      <div class="frise__step"><div class="frise__dot">3</div><h3>Rédaction du livret</h3><p>On décortique vos situations professionnelles et on les met en mots, bloc de compétences par bloc.</p></div>
+      <div class="frise__step"><div class="frise__dot">4</div><h3>Préparation au jury</h3><p>Entretiens blancs face à un jury simulé : vous arrivez préparé·e, sans surprise le jour J.</p></div>
+      <div class="frise__step"><div class="frise__dot">5</div><h3>Jury &amp; suites</h3><p>Validation totale, partielle (5 ans pour compléter) ou nouvelle étape : on reste à vos côtés.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ===================== FINANCEMENT + FAQ ===================== -->
-<section class="section" data-screen-label="Financement & FAQ">
-  <div class="wrap">
-    <div class="notice notice--gold reveal" style="max-width:860px;">Votre VAE est finançable : CPF / Mon Compte Formation, Transitions Pro, France Travail, OPCO Santé, ANFH… Dans la plupart des cas, sans avance de frais. <a href="/financement" style="color:var(--bordeaux); text-decoration:underline;">Voir le financement →</a></div>
-
-    <div class="section-head reveal" style="margin-top:48px;">
-      <span class="eyebrow">Questions fréquentes</span>
-      <h2 class="h-section">Vos questions sur la VAE sanitaire &amp; social</h2>
+<section class="band" data-screen-label="Financement &amp; FAQ">
+  <div class="bleed">
+    <div class="band__head reveal">
+      <span class="kicker">Financement</span>
+      <h2 class="mega">Une VAE finançable, souvent sans avance de frais</h2>
+      <p class="sub">Votre VAE est finançable de multiples façons. Dans la plupart des cas, sans avancer un centime. <a href="/financement" style="color:var(--bordeaux); text-decoration:underline;">Voir le financement →</a></p>
     </div>
-    <div class="faq reveal" data-delay="1">
+    <div class="fin-pills reveal" data-delay="1" style="margin-top:28px;">
+      <span class="fin-pill"><span class="tick">✓</span> CPF / Mon Compte Formation</span>
+      <span class="fin-pill"><span class="tick">✓</span> France VAE</span>
+      <span class="fin-pill"><span class="tick">✓</span> Transitions Pro</span>
+      <span class="fin-pill"><span class="tick">✓</span> France Travail</span>
+      <span class="fin-pill"><span class="tick">✓</span> OPCO Santé</span>
+      <span class="fin-pill"><span class="tick">✓</span> ANFH</span>
+    </div>
+
+    <div class="band__head reveal" style="margin-top:64px;">
+      <span class="kicker">Questions fréquentes</span>
+      <h2 class="mega">Vos questions sur la VAE sanitaire &amp; social</h2>
+    </div>
+    <div class="faq reveal" data-delay="1" style="margin-top:28px;">
       <details>
-        <summary>Faut-il un nombre d'années d'expérience précis ?</summary>
+        <summary>Faut-il un nombre d'années d'expérience précis&nbsp;?</summary>
         <div class="faq__a"><p>Non. Depuis la réforme 2023, il n'y a plus de durée minimale. Ce qui compte, c'est que votre expérience corresponde au référentiel du diplôme visé. Nous le vérifions ensemble dès le premier échange.</p></div>
       </details>
       <details>
-        <summary>Puis-je faire une VAE tout en travaillant ?</summary>
+        <summary>Puis-je faire une VAE tout en travaillant&nbsp;?</summary>
         <div class="faq__a"><p>Oui, c'est même le cas le plus fréquent. Nous adaptons le rythme à vos plannings, souvent décalés dans le secteur du soin. L'accompagnement se fait à distance ou en présentiel, selon votre préférence.</p></div>
       </details>
       <details>
-        <summary>Que se passe-t-il en cas de validation partielle ?</summary>
+        <summary>Que se passe-t-il en cas de validation partielle&nbsp;?</summary>
         <div class="faq__a"><p>Vous disposez de 5 ans pour valider les blocs manquants. Avec un accompagnement spécialisé, la validation partielle reste rare — et quand elle arrive, nous vous aidons à compléter rapidement.</p></div>
       </details>
       <details>
-        <summary>Mon diplôme passe par France VAE : avez-vous un rôle ?</summary>
+        <summary>Mon diplôme passe par France VAE : avez-vous un rôle&nbsp;?</summary>
         <div class="faq__a"><p>Absolument. France VAE pilote la procédure, mais nous vous accompagnons sur le fond : rédaction du livret, analyse de votre pratique et préparation au jury. C'est ce travail-là qui fait la différence.</p></div>
       </details>
       <details>
-        <summary>Combien de temps faut-il prévoir ?</summary>
+        <summary>Combien de temps faut-il prévoir&nbsp;?</summary>
         <div class="faq__a"><p>Comptez en général 4 à 8 mois avec un accompagnement, selon le diplôme et votre disponibilité. Nous fixons un calendrier réaliste dès le départ et nous nous y tenons.</p></div>
       </details>
     </div>
@@ -200,23 +224,24 @@
 </section>
 
 <!-- ===================== CTA ===================== -->
-<section class="section section--paper2 cta-band" data-screen-label="CTA">
-  <div class="sviz" data-viz="gauge"></div>
-  <div class="wrap reveal">
-    <span class="eyebrow" style="justify-content:center;">Premier pas</span>
-    <h2 class="h-section">Votre diplôme est plus proche que vous ne le pensez.</h2>
-    <p class="lead">Un échange gratuit suffit pour savoir si votre expérience ouvre droit à une VAE. Lançons-nous.</p>
-    <a href="/contact" class="btn btn--bordeaux btn--lg">Vérifier mon éligibilité <span class="arr">→</span></a>
+<section class="band band--rose" data-screen-label="CTA" style="text-align:center;">
+  <div class="sviz" data-viz="gauge" style="opacity:.4;"></div>
+  <div class="bleed reveal">
+    <span class="kicker">Premier pas</span>
+    <h2 class="mega" style="max-width:22ch; margin:6px auto 0;">Votre diplôme est plus proche que vous ne le pensez.</h2>
+    <p class="sub" style="margin:20px auto 30px; color:rgba(255,255,255,.92);">Un échange gratuit suffit pour savoir si votre expérience ouvre droit à une VAE. Lançons-nous.</p>
+    <a href="/contact" class="btn btn--lg" style="background:#fff; color:var(--bordeaux); border-color:#fff;">Vérifier mon éligibilité <span class="arr">→</span></a>
   </div>
 </section>
 
-<footer class="site-footer">
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer head--wide">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="brand__name" style="font-size:1.5rem;">Objectifs <b style="color:var(--rose);">Carrières</b></span>
-        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan de compétences, VAE et VAE spécialisée, partout en France.</p>
-        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384</p>
+        <p style="margin-top:16px; max-width:36ch; font-size:14.5px;">L'accompagnement de carrière spécialiste du sanitaire et social. Bilan, VAE, VAE spécialisée et CléA, partout en France.</p>
+        <p style="margin-top:14px; font-size:13px; color:#A98E9B;">Dirigeante : Florence Massol<br />SIREN 918 536 384 · Lyon</p>
       </div>
       <div>
         <h4>Accompagnements</h4>
@@ -224,7 +249,8 @@
           <li><a href="/bilan-de-competences">Bilan de compétences</a></li>
           <li><a href="/vae">VAE — Validation des acquis</a></li>
           <li><a href="/vae-sanitaire-social">VAE spécialisée sanitaire &amp; social</a></li>
-          <li><a href="/accompagnement">Notre méthode</a></li>
+          <li><a href="/clea">Certification CléA</a></li>
+          <li><a href="/comparatif">Comparatif des dispositifs</a></li>
         </ul>
       </div>
       <div>
