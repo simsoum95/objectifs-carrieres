@@ -992,7 +992,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (prefers-reduced-motion: no-preference) { .tape__track { animation: marquee 36s linear infinite; } }
 
 /* Grille BENTO pleine largeur */
-.bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 200px; gap: 14px; }
+.bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: minmax(200px, auto); gap: 14px; }
 .bento__tile { border-radius: 20px; padding: 26px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; color: var(--ink); background: var(--white); border: 1px solid var(--line); text-decoration: none; transition: transform .4s var(--ease), box-shadow .4s var(--ease); }
 a.bento__tile:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -30px rgba(59, 33, 64, .4); }
 .bento__tile.t-2w { grid-column: span 2; }
@@ -1009,7 +1009,7 @@ a.bento__tile:hover .go .arr { transform: translateX(4px); }
 .bento__num { position: absolute; top: 16px; right: 22px; font-family: var(--font-sans); font-weight: 800; font-size: clamp(2.4rem, 5vw, 4.4rem); line-height: 1; opacity: .15; }
 .bento__big { font-family: var(--font-sans); font-weight: 800; font-size: clamp(2.8rem, 5.5vw, 5rem); line-height: .9; letter-spacing: -.03em; color: var(--bordeaux); }
 .bento__tile--plum .bento__big, .bento__tile--rose .bento__big, .bento__tile--gold .bento__big { color: #fff; }
-@media (max-width: 980px) { .bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 190px; } .bento__tile.t-2x { grid-row: span 2; } }
+@media (max-width: 980px) { .bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: minmax(190px, auto); } .bento__tile.t-2x { grid-row: span 2; } }
 @media (max-width: 560px) { .bento { grid-template-columns: 1fr; } .bento__tile, .bento__tile.t-2w, .bento__tile.t-2h, .bento__tile.t-2x { grid-column: auto; grid-row: auto; min-height: 168px; } }
 
 /* Scroll horizontal (déborde volontairement à droite) */
@@ -1049,8 +1049,8 @@ a.bento__tile:hover .go .arr { transform: translateX(4px); }
   /* titres de section plus compacts (le titre du hero reste grand) */
   .band__head .mega { font-size: clamp(1.9rem, 3.4vw, 3.1rem); line-height: 1.06; }
   .band__head { margin-bottom: 4px; }
-  /* grilles compactées pour tenir dans la hauteur d'écran */
-  .bento { grid-auto-rows: 160px; }
+  /* grilles : hauteur mini compacte mais qui s'étend pour ne JAMAIS rogner le texte */
+  .bento { grid-auto-rows: minmax(180px, auto); }
   /* hero compacté pour tenir sur un écran */
   .xhero h1.mega { font-size: clamp(2.2rem, 4.3vw, 4rem); }
   .xhero__left { padding-top: 92px; padding-bottom: 26px; }
