@@ -946,6 +946,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .mega em { font-family: var(--font-display); font-style: italic; font-weight: 500; color: var(--bordeaux); letter-spacing: 0; }
 .band--plum .mega em, .band--ink .mega em, .band--rose .mega em { color: var(--rose); }
 .maxi { font-family: var(--font-sans); font-weight: 800; font-size: clamp(3.6rem, 15vw, 14rem); line-height: .82; letter-spacing: -.04em; }
+/* Exposants (« finançable », « * », « er »…) : ne pas hériter du letter-spacing négatif
+   du grand chiffre, sinon les lettres se chevauchent et deviennent illisibles. */
+.maxi span, .bento__big span { letter-spacing: normal; }
 .sub { font-size: clamp(1.05rem, 1.4vw, 1.28rem); color: var(--ink-2); max-width: 60ch; line-height: 1.6; }
 .band--plum .sub, .band--ink .sub, .band--rose .sub { color: rgba(255,255,255,.82); }
 
