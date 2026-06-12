@@ -239,26 +239,36 @@
     bad = invalid(message, !message.value.trim()) || bad;
     if (bad) return;
     var btn = form.querySelector("button[type=submit]");
-    btn.disabled = true; btn.style.opacity = ".7";
+    var btnLabel = btn.innerHTML;
+    btn.disabled = true; btn.style.opacity = ".7"; btn.setAttribute("aria-busy", "true");
+    btn.innerHTML = "Envoi en cours…";
+    var done = false;
+    function showSuccess() {
+      if (done) return; done = true;
+      document.getElementById("formBody").style.display = "none";
+      document.getElementById("formSuccess").style.display = "block";
+    }
+    function showError() {
+      if (done) return; done = true;
+      btn.disabled = false; btn.style.opacity = "1"; btn.removeAttribute("aria-busy"); btn.innerHTML = btnLabel;
+      alert("Une erreur est survenue. Vous pouvez aussi nous écrire à contact@objectifscarrieres.fr ou nous appeler au 04 12 29 00 33.");
+    }
     var data = {
       "Prénom": prenom.value.trim(), "Nom": nom.value.trim(),
       "E-mail": email.value.trim(), "Téléphone": form.tel.value.trim(),
       "Sujet": sujet.value, "Message": message.value.trim(),
       "_subject": "Nouvelle demande — Objectifs Carrières", "_template": "table"
     };
+    // Filet anti-lenteur : FormSubmit reçoit la demande tout de suite mais peut répondre
+    // lentement ; on n'oblige pas l'internaute à patienter plus de ~6 s.
+    var safety = setTimeout(showSuccess, 6000);
     fetch("https://formsubmit.co/ajax/contact@objectifscarrieres.fr", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify(data)
     }).then(function (r) { return r.json(); })
-      .then(function () {
-        document.getElementById("formBody").style.display = "none";
-        document.getElementById("formSuccess").style.display = "block";
-      })
-      .catch(function () {
-        btn.disabled = false; btn.style.opacity = "1";
-        alert("Une erreur est survenue. Vous pouvez aussi nous écrire à contact@objectifscarrieres.fr.");
-      });
+      .then(function () { clearTimeout(safety); showSuccess(); })
+      .catch(function () { clearTimeout(safety); showError(); });
   });
   ["prenom", "nom", "email", "sujet", "message"].forEach(function (id) {
     var el = form[id];
