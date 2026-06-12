@@ -80,7 +80,7 @@
           </div>
           <div>
             <p class="kicker" style="color:var(--bordeaux); margin:0 0 6px;">Par e-mail</p>
-            <p style="margin:0; font-size:1.2rem; color:var(--ink);"><a href="mailto:contact@objectifs-carrieres.fr">contact@objectifs-carrieres.fr</a></p>
+            <p style="margin:0; font-size:1.2rem; color:var(--ink);"><a href="mailto:contact@objectifscarrieres.fr">contact@objectifscarrieres.fr</a></p>
           </div>
           <div>
             <p class="kicker" style="color:var(--bordeaux); margin:0 0 6px;">Présence</p>
@@ -96,7 +96,7 @@
       <!-- Colonne droite : formulaire (markup & logique INCHANGÉS) -->
       <div class="reveal" data-delay="1">
         <div class="aside-card" style="padding:clamp(24px,3vw,38px);">
-          <!-- [À CONFIRMER] adresse de réception des demandes (FormSubmit, déjà activée pour le portefeuille) -->
+          <!-- Réception des demandes via FormSubmit vers contact@objectifscarrieres.fr (penser à activer cette adresse côté FormSubmit au 1er envoi) -->
           <form id="contactForm" novalidate>
             <div id="formBody">
               <h2 style="font-size:1.9rem;">Être rappelé·e</h2>
@@ -173,7 +173,7 @@
     <span class="kicker">Premier pas</span>
     <h2 class="mega" style="max-width:22ch; margin:6px auto 0;">Votre expérience mérite d'être reconnue.</h2>
     <p class="sub" style="margin:20px auto 30px;">Écrivez-nous, ou laissez vos coordonnées : on vous rappelle, gratuitement et sans engagement.</p>
-    <a href="mailto:contact@objectifs-carrieres.fr" class="btn btn--bordeaux btn--lg">Nous écrire <span class="arr">→</span></a>
+    <a href="mailto:contact@objectifscarrieres.fr" class="btn btn--bordeaux btn--lg">Nous écrire <span class="arr">→</span></a>
   </div>
 </section>
 
@@ -246,7 +246,7 @@
       "Sujet": sujet.value, "Message": message.value.trim(),
       "_subject": "Nouvelle demande — Objectifs Carrières", "_template": "table"
     };
-    fetch("https://formsubmit.co/ajax/simonoliv26@gmail.com", {
+    fetch("https://formsubmit.co/ajax/contact@objectifscarrieres.fr", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify(data)
@@ -257,7 +257,7 @@
       })
       .catch(function () {
         btn.disabled = false; btn.style.opacity = "1";
-        alert("Une erreur est survenue. Vous pouvez aussi nous écrire à contact@objectifs-carrieres.fr.");
+        alert("Une erreur est survenue. Vous pouvez aussi nous écrire à contact@objectifscarrieres.fr.");
       });
   });
   ["prenom", "nom", "email", "sujet", "message"].forEach(function (id) {
