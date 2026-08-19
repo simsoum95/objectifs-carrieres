@@ -4,9 +4,9 @@
 > d'application vit en tête du CLAUDE.md de ce repo). Il distille 4 mois de retours d'Olivier (le
 > client) et de Shimon (l'opérateur), extraits le 19/08/2026 des journaux, git logs, recaps et
 > fiches mémoire de tout le workspace. Socle commun **v1 — 2026-08-19**, identique dans chaque
-> projet ; le master vit à la racine du workspace multi-projets (`../DOCTRINE-OLIVIER.md` sur la
-> machine de Shimon) et fait foi en cas de divergence. La section « Spécifique » en fin de
-> fichier est propre à ce projet.
+> projet ; le master vit dans `cerveau/DOCTRINE-OLIVIER.md` à la racine du workspace
+> multi-projets (machine de Shimon) et fait foi en cas de divergence. La section « Spécifique »
+> en fin de fichier est propre à ce projet.
 
 ## 0. Le rôle (depuis l'appel Olivier → Shimon du 19/08/2026)
 
