@@ -171,6 +171,15 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   chemins) ; les sessions satellites ne commitent jamais ; commit/push seulement quand Shimon le
   demande ou que la tâche l'implique clairement ; push = déploiement Vercel auto ; gate strict
   avant commit (tsc puis build, commandes séparées, exit 0 chacune).
+- 🔴 **Avant TOUT push : regarder ce qui part** (`git log origin/main..HEAD`). Un commit déjà
+  fait localement peut avoir été gardé en local EXPRÈS (chantier bloqué par une décision, prix
+  manquants…) : pousser autre chose l'emporte avec soi. Payé le 19/08 sur PRADESS — le chantier
+  devis/paiement du 11/08, volontairement non poussé, est parti avec un commit de documentation
+  (sans dégât : il était conçu pour rester inerte sans prix, décision Shimon = le laisser).
+- **Une session par projet** (défaut) : elle lit le CLAUDE.md/REPRISE.md et la doctrine de CE
+  repo. La session au niveau workspace est réservée au transverse (chantiers multi-projets,
+  arbitrages inter-projets, préparation des points Olivier). Jamais deux sessions qui écrivent
+  dans le même repo en même temps.
 - **Isolation projets** : git/Supabase/Vercel/domaines séparés ; jamais d'import croisé (un
   composant utile ailleurs se ré-implémente) ; jamais modifier le projet-source d'un autre
   périmètre (surcharger côté consommateur — ex. prix packs côté Kariér, GFC intact).
