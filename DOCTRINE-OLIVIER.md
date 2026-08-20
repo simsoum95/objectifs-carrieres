@@ -180,6 +180,11 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   repo. La session au niveau workspace est réservée au transverse (chantiers multi-projets,
   arbitrages inter-projets, préparation des points Olivier). Jamais deux sessions qui écrivent
   dans le même repo en même temps.
+- **Une décision transverse ne remonte pas toute seule dans les sessions déjà ouvertes** : elles
+  ont lu leur CLAUDE.md au démarrage et ne le relisent pas en cours de route. Quand une règle
+  commune change, la session workspace NOTIFIE les sessions projet actives (elles font une pause,
+  lisent, puis reprennent où elles en étaient). Constaté le 20/08 : Kariér travaillait depuis la
+  veille sans connaître le protocole.
 - **Isolation projets** : git/Supabase/Vercel/domaines séparés ; jamais d'import croisé (un
   composant utile ailleurs se ré-implémente) ; jamais modifier le projet-source d'un autre
   périmètre (surcharger côté consommateur — ex. prix packs côté Kariér, GFC intact).
