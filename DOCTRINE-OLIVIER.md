@@ -180,6 +180,13 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   repo. La session au niveau workspace est réservée au transverse (chantiers multi-projets,
   arbitrages inter-projets, préparation des points Olivier). Jamais deux sessions qui écrivent
   dans le même repo en même temps.
+- **Un outil qui réécrit des fichiers doit refuser ce qu'il ne reconnaît pas.** Payé deux fois le
+  26/08 par `propager-doctrine.sh` : il travaillait sur une liste de projets EN DUR (les nouveaux
+  projets restaient sur un socle périmé), et sa découpe a effacé la section propre d'un projet dont
+  la structure différait. Règles : découvrir les cibles au lieu de les lister ; vérifier la
+  structure AVANT d'écrire ; en cas de doute, ignorer la cible en le disant plutôt que d'écraser.
+- **Ne jamais écrire dans un repo où une autre session ou un agent travaille** — y compris pour une
+  propagation « inoffensive ». Vérifier qui a la main avant, pas après.
 - **Une décision transverse ne remonte pas toute seule dans les sessions déjà ouvertes** : elles
   ont lu leur CLAUDE.md au démarrage et ne le relisent pas en cours de route. Quand une règle
   commune change, la session workspace NOTIFIE les sessions projet actives (elles font une pause,

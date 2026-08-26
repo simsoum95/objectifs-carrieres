@@ -1,0 +1,16 @@
+# Fichiers de travail À NE JAMAIS DÉPLOYER.
+#
+# Ce site est statique : tout fichier présent dans le dépôt est servi tel quel sur
+# le domaine. Le 26/08/2026, un audit du workspace a constaté que
+# DOCTRINE-OLIVIER.md, CLAUDE.md et BRIEF.md répondaient en HTTP 200 sur
+# www.objectifscarrieres.fr — le site public d'une cliente.
+#
+# Ces fichiers restent versionnés dans git (les sessions en ont besoin), ils ne sont
+# simplement plus envoyés à Vercel.
+#
+# ⚠️ Ne PAS ignorer : les .html de la racine, les .js du site (site.js, oc.js,
+# living.js, motifs.js, live-scenes.js, section-viz.js), styles.css, les images,
+# robots.txt, sitemap.xml et vercel.json.
+
+# Documentation interne du projet et du workspace
+*.md
