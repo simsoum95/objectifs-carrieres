@@ -231,7 +231,8 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   zenacademy.fr, en ligne depuis six jours sans une seule image de partage, sur les 17 pages. La
   carte se GÉNÈRE à la charte du site (gabarit HTML versionné + script rejouable, comme les PDF),
   elle n'affirme rien que les documents du projet ne soutiennent, et elle se vérifie après
-  déploiement en HTTP. Dans la même passe : longueur des `<title>` (au-delà de ~62 caractères
+  déploiement en HTTP — en mesurant le FICHIER servi, pas la balise : la présence d'`og:image`
+  ne prouve rien (payé le 26/08 sur Tadiran : photo de 395×341 déclarée 1200×800). Dans la même passe : longueur des `<title>` (au-delà de ~62 caractères
   Google tronque et la marque disparaît du résultat) et des `description` (~160). Corollaire :
   **après chaque décision produit, relire title/description/og:*/JSON-LD AVANT de refermer** —
   c'est la couche que personne ne regarde parce qu'elle ne s'affiche pas sur la page (payé le
