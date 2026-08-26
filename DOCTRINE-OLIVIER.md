@@ -189,6 +189,9 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   projets restaient sur un socle périmé), et sa découpe a effacé la section propre d'un projet dont
   la structure différait. Règles : découvrir les cibles au lieu de les lister ; vérifier la
   structure AVANT d'écrire ; en cas de doute, ignorer la cible en le disant plutôt que d'écraser.
+  Vaut autant pour ce qui LIT : un audit sur liste en dur ne dit pas « je n'ai pas trouvé », il
+  dit « tout va bien » (payé le 26/08 : `objectifs carrieres` s'écrit avec une espace, pas un
+  tiret — un test de fichier silencieux l'a fait disparaître d'un relevé sans un mot).
 - **Ne jamais écrire dans un repo où une autre session ou un agent travaille** — y compris pour une
   propagation « inoffensive ». Vérifier qui a la main avant, pas après.
 - **Une décision transverse ne remonte pas toute seule dans les sessions déjà ouvertes** : elles
@@ -225,7 +228,11 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   carte se GÉNÈRE à la charte du site (gabarit HTML versionné + script rejouable, comme les PDF),
   elle n'affirme rien que les documents du projet ne soutiennent, et elle se vérifie après
   déploiement en HTTP. Dans la même passe : longueur des `<title>` (au-delà de ~62 caractères
-  Google tronque et la marque disparaît du résultat) et des `description` (~160).
+  Google tronque et la marque disparaît du résultat) et des `description` (~160). Corollaire :
+  **après chaque décision produit, relire title/description/og:*/JSON-LD AVANT de refermer** —
+  c'est la couche que personne ne regarde parce qu'elle ne s'affiche pas sur la page (payé le
+  26/08 sur Élysée : formations retirées le 24/06, carte de partage et descriptions Google
+  jamais recalées, deux mois durant).
 - **Un verrou qui échoue OUVERT n'est pas un verrou** : quand un secret d'accès (CRON_SECRET,
   jeton d'API, Basic Auth) est absent, la porte se FERME. Sinon un envoi vers de vrais clients,
   ou une route de cron, devient déclenchable par n'importe qui.
