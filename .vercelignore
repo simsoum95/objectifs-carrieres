@@ -1,0 +1,11 @@
+# Fichiers à ne pas mettre en ligne.
+#
+# Ce site est statique : tout fichier présent dans le dépôt est servi tel quel sur
+# le domaine. Les fichiers de documentation (*.md) ne sont pas publiés.
+#
+# ⚠️ Ne PAS ignorer : les .html de la racine, les .js du site (site.js, oc.js,
+# living.js, motifs.js, live-scenes.js, section-viz.js), styles.css, les images,
+# robots.txt, sitemap.xml et vercel.json.
+
+# Documentation du projet
+*.md
