@@ -124,7 +124,11 @@ l'expérience ». Jamais de barème commercial public → « précisé dans la c
 faits réglementaires exacts, vérifiés sources primaires, jamais « corrigés en arrière ». Libellés
 en mots entiers, sans recouvrement sémantique, sans jargon nu (tout sigle expliqué). **Les
 libellés choisis par Olivier ne se renomment JAMAIS sans son accord.** Un renommage demandé =
-grep exhaustif jusqu'à zéro occurrence.
+grep exhaustif jusqu'à zéro occurrence. **Un sweep de wording bannit une FAMILLE de
+formulations, pas une liste de chaînes exactes** : interdire « on gère le reste » et laisser « on
+s'occupe du reste » dans un titre de section ne ferme rien (payé le 26/08 sur GFC). Et le **grep du
+CODE fait foi avant la sonde HTTP** — le code porte aussi ce qui ne s'affiche qu'après un clic, et
+les `title` / `description` / `og:*`.
 
 **Loi 9 — Design sobre, jamais « look IA ».** Bannir dégradés/glow/glassmorphism/pastel — Olivier
 détecte le look IA au premier coup d'œil (« on voit des agents »). Plus d'espace = rendu plus
