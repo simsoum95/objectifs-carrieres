@@ -208,7 +208,20 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   téléchargeables sur le domaine du client — constaté le 26/08 sur zenacademy.fr, un site que
   l'instructeur d'un dossier officiel consulte. Parade : `.vercelignore` (les fichiers restent
   versionnés, ils ne sont plus déployés) ; l'installation automatique le pose désormais seule.
-  Vérifier en HTTP après tout déploiement d'un nouveau site.
+  Vérifier en HTTP après tout déploiement d'un nouveau site. Balayé le 26/08 sur toute la
+  classe : elysee-formations.fr servait aussi sa doctrine, son brief, son audit, `contenu/` et
+  1,3 Mo de `design-src/` ; objectifscarrieres.fr sa doctrine, son CLAUDE.md et son brief.
+  Les applications Next (Kariér, PRADESS, Leachy, CF, FC) ne servent pas la racine du dépôt :
+  le risque est propre aux sites STATIQUES.
+- 🟠 **Un site en ligne sans image de partage est un site muet.** Toute page publique porte
+  `og:image` (1200×630, avec `og:image:width/height/alt`) et `twitter:card=summary_large_image` :
+  sans elle, chaque lien que le client envoie — à un prospect, dans un mail, dans un message de
+  suivi de dossier — s'affiche en carte grise sans visuel ni promesse. Constaté le 26/08 sur
+  zenacademy.fr, en ligne depuis six jours sans une seule image de partage, sur les 17 pages. La
+  carte se GÉNÈRE à la charte du site (gabarit HTML versionné + script rejouable, comme les PDF),
+  elle n'affirme rien que les documents du projet ne soutiennent, et elle se vérifie après
+  déploiement en HTTP. Dans la même passe : longueur des `<title>` (au-delà de ~62 caractères
+  Google tronque et la marque disparaît du résultat) et des `description` (~160).
 - **Un verrou qui échoue OUVERT n'est pas un verrou** : quand un secret d'accès (CRON_SECRET,
   jeton d'API, Basic Auth) est absent, la porte se FERME. Sinon un envoi vers de vrais clients,
   ou une route de cron, devient déclenchable par n'importe qui.
