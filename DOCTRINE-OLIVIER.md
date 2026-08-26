@@ -191,7 +191,20 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
 - **Données réelles** : n'agir QUE sur des comptes ZZTEST-/jetables ; jamais soumettre un vrai
   formulaire (pollue Zoho/Make) ; données de test nettoyées ; migration appliquée = fichier .sql
   écrit TOUJOURS ; suppression précédée d'une sauvegarde.
-- **Secrets** : jamais en clair dans code/mémoire/docs ; l'humain fait la manipulation finale.
+- **Secrets** : jamais en clair dans code/mémoire/docs ; l'humain fait la manipulation finale. Un
+  mot de passe de base ou une clé se lit dans une variable d'environnement, et son absence FAIT
+  ÉCHOUER le script — jamais de valeur par défaut. Payé le 26/08 : le mot de passe de la base de
+  production Kariér vivait en clair dans 5 scripts versionnés, et le journal du projet en avait
+  fait une convention (« pattern habituel »), ce qui garantissait la récidive.
+- 🔴 **Un fichier de travail dans un site servi tel quel est PUBLIC.** Sur un site statique (ou
+  tout ce qui sert la racine du dépôt), `DOCTRINE-OLIVIER.md`, `CLAUDE.md` et `REPRISE.md` sont
+  téléchargeables sur le domaine du client — constaté le 26/08 sur zenacademy.fr, un site que
+  l'instructeur d'un dossier officiel consulte. Parade : `.vercelignore` (les fichiers restent
+  versionnés, ils ne sont plus déployés) ; l'installation automatique le pose désormais seule.
+  Vérifier en HTTP après tout déploiement d'un nouveau site.
+- **Un verrou qui échoue OUVERT n'est pas un verrou** : quand un secret d'accès (CRON_SECRET,
+  jeton d'API, Basic Auth) est absent, la porte se FERME. Sinon un envoi vers de vrais clients,
+  ou une route de cron, devient déclenchable par n'importe qui.
 - **Économie** : travailler en direct, pas de flottes d'agents en arrière-plan sauf demande
   explicite de Shimon.
 - **Systèmes du client** : jamais toucher la config d'un tiers en prod (workflows Zoho…) —
