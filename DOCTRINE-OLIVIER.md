@@ -191,7 +191,11 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   structure AVANT d'écrire ; en cas de doute, ignorer la cible en le disant plutôt que d'écraser.
   Vaut autant pour ce qui LIT : un audit sur liste en dur ne dit pas « je n'ai pas trouvé », il
   dit « tout va bien » (payé le 26/08 : `objectifs carrieres` s'écrit avec une espace, pas un
-  tiret — un test de fichier silencieux l'a fait disparaître d'un relevé sans un mot).
+  tiret — un test de fichier silencieux l'a fait disparaître d'un relevé sans un mot). Et un
+  audit ment aussi dans l'autre sens : un instrument mort conclut à une absence — lire le code
+  HTTP avant de conclure qu'une balise ou une page n'existe pas (payé le 26/08 sur Leachy : un
+  dev server mort + curl sans `-w "%{http_code}"` = « aucune balise og », faux — on aurait
+  « corrigé » ce qui marchait).
 - **Ne jamais écrire dans un repo où une autre session ou un agent travaille** — y compris pour une
   propagation « inoffensive ». Vérifier qui a la main avant, pas après.
 - **Une décision transverse ne remonte pas toute seule dans les sessions déjà ouvertes** : elles
@@ -233,6 +237,12 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   c'est la couche que personne ne regarde parce qu'elle ne s'affiche pas sur la page (payé le
   26/08 sur Élysée : formations retirées le 24/06, carte de partage et descriptions Google
   jamais recalées, deux mois durant).
+- **Un invariant qui porte une promesse commerciale vit en CONTRAINTE DE BASE — et on vérifie
+  ce qu'il protège RÉELLEMENT, pas ce qu'il semble protéger.** Payé le 26/08 sur Leachy :
+  `attributions.lead_id UNIQUE` garantissait qu'une FICHE n'aille qu'à un acheteur, mais deux
+  fiches portant le même numéro de téléphone partaient chez deux acheteurs — qui auraient appelé
+  la même personne. L'exclusivité promise tombait sans qu'aucune ligne de code soit fautive :
+  la contrainte protégeait la ligne, la promesse portait sur la PERSONNE.
 - **Un verrou qui échoue OUVERT n'est pas un verrou** : quand un secret d'accès (CRON_SECRET,
   jeton d'API, Basic Auth) est absent, la porte se FERME. Sinon un envoi vers de vrais clients,
   ou une route de cron, devient déclenchable par n'importe qui.
