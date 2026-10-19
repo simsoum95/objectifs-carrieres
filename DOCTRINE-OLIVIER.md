@@ -290,6 +290,11 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
 - Avis : 39 avis variés et réalistes (longueurs/tons différents, un 4 étoiles conservé —
   l'uniformité fait truqué) ; agréments non obtenus = tout retirer (« CPF » conservé comme
   demandé par le client).
+- **Qualiopi OBTENU** (certificat Qualianor n° 3775 OF, du 30/06/2026 au 29/06/2029, PDF servi à
+  `/certificat-qualiopi-objectifs-carrieres.pdf`) — périmètre = **bilans de compétences + VAE
+  UNIQUEMENT** (pas « actions de formation » : ne jamais présenter la préparation CléA comme
+  couverte). Toute mention Qualiopi cite ces deux catégories (charte de la marque). EDOF / Mon
+  Compte Formation : toujours NON affiché tant que le référencement n'est pas confirmé (19/10/2026).
 - Légal : renseigné depuis les documents officiels (Kbis, Pappers) en FILTRANT les données
   personnelles non nécessaires (adresse perso et date de naissance de la dirigeante
   volontairement non publiées — RGPD).

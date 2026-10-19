@@ -1106,3 +1106,15 @@ a.bento__tile:hover .go .arr { transform: translateX(4px); }
 .band--rose .ticks li strong, .band--rose .ticks li b { color: #fff; }
 .band--plum .ticks li::before, .band--ink .ticks li::before { background: var(--rose); }
 .band--rose .ticks li::before { background: #fff; }
+
+/* — Certification Qualiopi (pied de page) — */
+.footer-qualiopi { display: flex; align-items: center; gap: 30px; flex-wrap: wrap; margin-top: 48px; padding-top: 38px; border-top: 1px solid rgba(255,255,255,.12); }
+.footer-qualiopi__badge { background: #fff; border-radius: 12px; padding: 14px 20px; display: inline-flex; line-height: 0; flex: none; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.footer-qualiopi__badge:hover { transform: translateY(-2px); box-shadow: 0 12px 34px -10px rgba(0,0,0,.45); }
+.footer-qualiopi__badge img { width: 210px; height: auto; display: block; }
+.footer-qualiopi__txt { max-width: 52ch; }
+.footer-qualiopi__txt p { font-size: 14px; line-height: 1.55; color: #CBB6C1; margin: 0 0 16px; }
+.site-footer .btn--cert { background: transparent; border: 1px solid rgba(255,255,255,.4); color: #fff; }
+.site-footer .btn--cert:hover { background: rgba(255,255,255,.12); border-color: #fff; color: #fff; }
+.footer-note { font-size: 11.5px; line-height: 1.5; color: #A98E9B; margin: 16px 0 0; }
+@media (max-width: 560px) { .footer-qualiopi { gap: 22px; } .footer-qualiopi__badge img { width: 178px; } }
