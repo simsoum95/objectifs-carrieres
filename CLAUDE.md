@@ -36,6 +36,10 @@
 - **Dormant depuis le 2026-06-12** (dernier commit `05fd289` : envoi du formulaire fluide,
   feedback ≤ 6 s). Aucun chantier ouvert connu. Toute reprise : relire `BRIEF.md`, balayer
   l'état réel des pages, puis appliquer le protocole ci-dessus.
+- **19/10/2026** : certificat Qualiopi intégré (`b198a17` — logo + lien PDF dans le pied de page
+  des 16 pages, « Certifié Qualiopi » en Repères/accueil/financement/contact, section
+  « Certification qualité » + NDA 84 69 20152 69 dans les mentions légales). Restent 2
+  `[À COMPLÉTER]` visibles : référent handicap (accessibilité) et médiateur (CGV).
 
 ## Process
 
