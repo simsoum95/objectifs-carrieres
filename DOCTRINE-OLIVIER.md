@@ -295,6 +295,12 @@ Olivier ») ; toute décision antérieure qu'une nouvelle demande rouvre.
   UNIQUEMENT** (pas « actions de formation » : ne jamais présenter la préparation CléA comme
   couverte). Toute mention Qualiopi cite ces deux catégories (charte de la marque). EDOF / Mon
   Compte Formation : toujours NON affiché tant que le référencement n'est pas confirmé (19/10/2026).
+- **AUCUN CPF** (Olivier, 19/10/2026 : « aucun n'est éligible au CPF actuellement ») : ni « éligible
+  CPF », ni pastille CPF, ni témoignage qui cite le CPF, ni promesse « 0 € / pris en charge à 100 %
+  dans la plupart des cas » adossée au CPF. Financements affichés = Transitions Pro, France
+  Travail, OPCO Santé, ANFH, employeur, France VAE, autofinancement — toujours « selon votre
+  situation ». Ne revient que sur ordre explicite d'Olivier (référencement EDOF actif).
+  Référent handicap = **Florence Massol**.
 - Légal : renseigné depuis les documents officiels (Kbis, Pappers) en FILTRANT les données
   personnelles non nécessaires (adresse perso et date de naissance de la dirigeante
   volontairement non publiées — RGPD).

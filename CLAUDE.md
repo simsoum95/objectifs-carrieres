@@ -40,6 +40,9 @@
   des 16 pages, « Certifié Qualiopi » en Repères/accueil/financement/contact, section
   « Certification qualité » + NDA 84 69 20152 69 dans les mentions légales). Restent 2
   `[À COMPLÉTER]` visibles : référent handicap (accessibilité) et médiateur (CGV).
+- **19/10/2026 (suite, réponses d'Olivier)** : pas d'EDOF ; **toutes les mentions CPF retirées**
+  (16 pages + image de partage regénérée) ; référent handicap = Florence Massol. Reste UN
+  `[À COMPLÉTER]` : le médiateur de la consommation (CGV) — Olivier le demande à Florence.
 
 ## Process
 

@@ -2,7 +2,7 @@
 
 Site vitrine de **Objectifs Carrières**, organisme d'accompagnement de carrière **spécialiste du sanitaire et social** : bilan de compétences, VAE et VAE spécialisée (DEAS, DEAP, DEAES, DEME, DEES, DEEJE…).
 
-> Site **statique** (HTML/CSS/JS vanilla, sans build). Design « vivant » : sections animées en continu (canvas) et un **diagramme de parcours** animé en signature. Dirigeante : **Florence Massol**. Certifié **Qualiopi**, référencé **Mon Compte Formation (EDOF)**.
+> Site **statique** (HTML/CSS/JS vanilla, sans build). Design « vivant » : sections animées en continu (canvas) et un **diagramme de parcours** animé en signature. Dirigeante : **Florence Massol**. Certifié **Qualiopi** (bilans de compétences + VAE, depuis le 30/06/2026). Pas de CPF ni d'EDOF à ce jour (décision Olivier du 19/10/2026).
 
 ## Direction artistique
 
